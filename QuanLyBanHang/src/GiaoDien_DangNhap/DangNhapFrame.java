@@ -71,8 +71,9 @@ public class DangNhapFrame extends javax.swing.JFrame {
         inpPassword = new javax.swing.JPasswordField();
         chkAgree = new javax.swing.JCheckBox();
         lblCancel = new javax.swing.JLabel();
-        btnLogin = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        btnLogin = new javax.swing.JLabel();
         rightPanel = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         leftPanel = new javax.swing.JLabel();
@@ -139,6 +140,21 @@ public class DangNhapFrame extends javax.swing.JFrame {
         getContentPane().add(lblCancel);
         lblCancel.setBounds(660, 510, 160, 70);
 
+        jLabel2.setFont(new java.awt.Font("Cambria Math", 1, 40)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Login");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(520, 100, 320, 60);
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_GiaoDienChinh/DangXuat.png"))); // NOI18N
+        jLabel3.setText("Change Password");
+        jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(710, 50, 190, 40);
+
         btnLogin.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         btnLogin.setForeground(new java.awt.Color(255, 255, 255));
         btnLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_GiaoDienChinh/nut.png"))); // NOI18N
@@ -151,13 +167,6 @@ public class DangNhapFrame extends javax.swing.JFrame {
         });
         getContentPane().add(btnLogin);
         btnLogin.setBounds(530, 520, 140, 50);
-
-        jLabel2.setFont(new java.awt.Font("Cambria Math", 1, 40)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Login");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(520, 100, 320, 60);
 
         rightPanel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         rightPanel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_GiaoDienChinh/right_panel.png"))); // NOI18N
@@ -234,6 +243,7 @@ public class DangNhapFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
