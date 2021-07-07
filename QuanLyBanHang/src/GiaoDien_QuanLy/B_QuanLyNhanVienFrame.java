@@ -424,7 +424,7 @@ public class B_QuanLyNhanVienFrame extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        btnFirst.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnFirst.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         btnFirst.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Icon/First.png"))); // NOI18N
         btnFirst.setText("First");
         btnFirst.addActionListener(new java.awt.event.ActionListener() {
@@ -433,7 +433,7 @@ public class B_QuanLyNhanVienFrame extends javax.swing.JFrame {
             }
         });
 
-        btnPrevious.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnPrevious.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         btnPrevious.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Icon/lui.png"))); // NOI18N
         btnPrevious.setText("Previous");
         btnPrevious.addActionListener(new java.awt.event.ActionListener() {
@@ -442,7 +442,7 @@ public class B_QuanLyNhanVienFrame extends javax.swing.JFrame {
             }
         });
 
-        btnNext.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnNext.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         btnNext.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Icon/tien.png"))); // NOI18N
         btnNext.setText("Next");
         btnNext.addActionListener(new java.awt.event.ActionListener() {
@@ -451,7 +451,7 @@ public class B_QuanLyNhanVienFrame extends javax.swing.JFrame {
             }
         });
 
-        btnLast.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnLast.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         btnLast.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Icon/den_cuoi.png"))); // NOI18N
         btnLast.setText("Last");
         btnLast.addActionListener(new java.awt.event.ActionListener() {
