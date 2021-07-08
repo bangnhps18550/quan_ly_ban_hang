@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -50,7 +46,6 @@ public class DangNhapFrame extends javax.swing.JFrame {
         });
         lblCancel.setHorizontalTextPosition((int) CENTER_ALIGNMENT);
         btnLogin.setHorizontalTextPosition((int) CENTER_ALIGNMENT);
-        System.out.println((int) CENTER_ALIGNMENT);
     }
    
 
@@ -83,36 +78,30 @@ public class DangNhapFrame extends javax.swing.JFrame {
         setMaximumSize(new java.awt.Dimension(900, 650));
         setUndecorated(true);
         setPreferredSize(new java.awt.Dimension(900, 650));
-        getContentPane().setLayout(null);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel10.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Password");
-        getContentPane().add(jLabel10);
-        jLabel10.setBounds(520, 310, 150, 30);
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 310, 150, 30));
 
         jLabel8.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Username");
-        getContentPane().add(jLabel8);
-        jLabel8.setBounds(520, 210, 150, 30);
-        getContentPane().add(jSeparator1);
-        jSeparator1.setBounds(520, 390, 320, 20);
-        getContentPane().add(jSeparator2);
-        jSeparator2.setBounds(520, 290, 320, 20);
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 210, 150, 30));
+        getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 390, 320, 20));
+        getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 290, 320, 20));
 
         txtUserName.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
         txtUserName.setForeground(new java.awt.Color(255, 255, 255));
         txtUserName.setBorder(null);
-        getContentPane().add(txtUserName);
-        txtUserName.setBounds(520, 240, 320, 50);
+        getContentPane().add(txtUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 240, 320, 50));
 
         inpPassword.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
         inpPassword.setForeground(new java.awt.Color(255, 255, 255));
         inpPassword.setText("jPasswordField1");
         inpPassword.setBorder(null);
-        getContentPane().add(inpPassword);
-        inpPassword.setBounds(520, 340, 320, 50);
+        getContentPane().add(inpPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 340, 320, 50));
 
         chkAgree.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
         chkAgree.setForeground(new java.awt.Color(255, 255, 255));
@@ -122,8 +111,7 @@ public class DangNhapFrame extends javax.swing.JFrame {
                 chkAgreeActionPerformed(evt);
             }
         });
-        getContentPane().add(chkAgree);
-        chkAgree.setBounds(520, 440, 310, 31);
+        getContentPane().add(chkAgree, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 440, 310, -1));
 
         lblCancel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         lblCancel.setForeground(new java.awt.Color(255, 255, 255));
@@ -137,23 +125,20 @@ public class DangNhapFrame extends javax.swing.JFrame {
                 lblCancelMouseClicked(evt);
             }
         });
-        getContentPane().add(lblCancel);
-        lblCancel.setBounds(660, 510, 160, 70);
+        getContentPane().add(lblCancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 510, 160, 70));
 
         jLabel2.setFont(new java.awt.Font("Cambria Math", 1, 40)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Login");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(520, 100, 320, 60);
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 100, 320, 60));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_GiaoDienChinh/DangXuat.png"))); // NOI18N
         jLabel3.setText("Change Password");
         jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(710, 50, 190, 40);
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 50, 190, 40));
 
         btnLogin.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         btnLogin.setForeground(new java.awt.Color(255, 255, 255));
@@ -165,24 +150,20 @@ public class DangNhapFrame extends javax.swing.JFrame {
                 btnLoginMouseClicked(evt);
             }
         });
-        getContentPane().add(btnLogin);
-        btnLogin.setBounds(530, 520, 140, 50);
+        getContentPane().add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 520, 140, 50));
 
         rightPanel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         rightPanel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_GiaoDienChinh/right_panel.png"))); // NOI18N
-        getContentPane().add(rightPanel);
-        rightPanel.setBounds(290, -10, 740, 670);
+        getContentPane().add(rightPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, -10, 740, 670));
 
         jLabel1.setFont(new java.awt.Font("Berlin Sans FB", 0, 30)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Come Fly With Us");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(100, 130, 250, 50);
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 130, 250, 50));
 
         leftPanel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         leftPanel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_GiaoDienChinh/left_panel.png"))); // NOI18N
-        getContentPane().add(leftPanel);
-        leftPanel.setBounds(-100, 0, 680, 660);
+        getContentPane().add(leftPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(-100, 0, 680, 660));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
