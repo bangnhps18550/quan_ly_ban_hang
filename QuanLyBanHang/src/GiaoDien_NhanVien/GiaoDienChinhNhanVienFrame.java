@@ -10,6 +10,7 @@ package GiaoDien_NhanVien;
 
 import GiaoDien_QuanLy.*;
 import java.awt.Color;
+import java.awt.Cursor;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.swing.ImageIcon;
@@ -223,6 +224,7 @@ Thread dongho;
     }//GEN-LAST:event_lblBanHangMouseEntered
 
     private void lblBanHangMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBanHangMouseExited
+        lblBanHang.setCursor(new Cursor(Cursor.HAND_CURSOR));
         lblBanHang.setBackground(new Color(242,242,242));
         lblBanHang.setForeground(Color.black);  
         lblBanHang.setIcon(new ImageIcon(getClass().getResource("/Img_GiaoDienChinh/giohangxanh.png")));        // TODO add your handling code here:
