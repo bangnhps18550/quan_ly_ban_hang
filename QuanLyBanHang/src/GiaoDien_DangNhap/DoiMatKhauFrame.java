@@ -146,6 +146,11 @@ public class DoiMatKhauFrame extends javax.swing.JFrame {
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_GiaoDienChinh/DangXuat.png"))); // NOI18N
         jLabel3.setText("Login");
         jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 40, 170, 40));
 
         btnLogin.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -208,6 +213,10 @@ public class DoiMatKhauFrame extends javax.swing.JFrame {
     private void inpComfirmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inpComfirmActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_inpComfirmActionPerformed
+
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+        
+    }//GEN-LAST:event_jLabel3MouseClicked
 
     /**
      * @param args the command line arguments
