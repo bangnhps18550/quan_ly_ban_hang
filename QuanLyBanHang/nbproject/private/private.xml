@@ -2,6 +2,7 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group>
             <file>file:/D:/AGILE-SCRUM/DuAn_QuanLyBanHang/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_NhanVien/GiaoDienChinhNhanVienFrame.java</file>
             <file>file:/D:/AGILE-SCRUM/DuAn_QuanLyBanHang/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_DangNhap/Main.java</file>
@@ -14,5 +15,8 @@
             <file>file:/D:/AGILE-SCRUM/DuAn_QuanLyBanHang/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_NhanVien/C_GiamSatHoaDon.java</file>
             <file>file:/D:/AGILE-SCRUM/DuAn_QuanLyBanHang/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_NhanVien/A_QuanLySanPhamFrame.java</file>
         </group>
+=======
+        <group/>
+>>>>>>> addbabec4b2c396bce1c844eab42b5a27062a3e0
     </open-files>
 </project-private>
