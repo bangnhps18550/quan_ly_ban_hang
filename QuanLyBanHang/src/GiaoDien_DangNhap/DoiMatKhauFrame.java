@@ -215,13 +215,11 @@ public class DoiMatKhauFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_inpComfirmActionPerformed
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
-<<<<<<< HEAD
-        
-=======
+
             DangNhapFrame dnf=new DangNhapFrame();
             dnf.setVisible(true);
             dispose();// TODO add your handling code here:
->>>>>>> addbabec4b2c396bce1c844eab42b5a27062a3e0
+
     }//GEN-LAST:event_jLabel3MouseClicked
 
     /**
