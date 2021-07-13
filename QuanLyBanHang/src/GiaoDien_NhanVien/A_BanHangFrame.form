@@ -45,8 +45,8 @@
                               </Group>
                               <EmptySpace min="0" pref="240" max="32767" attributes="0"/>
                           </Group>
-                          <Component id="jPanel1" alignment="0" pref="0" max="32767" attributes="0"/>
-                          <Component id="jPanel2" alignment="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="jPanel1" alignment="0" pref="1134" max="32767" attributes="0"/>
+                          <Component id="jPanel2" alignment="0" pref="1134" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -158,10 +158,15 @@
                           <Component id="txtSoDT" min="-2" pref="154" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                           <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtEmail" min="-2" pref="148" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                                  <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="txtEmail" min="-2" pref="148" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                       </Group>
                   </Group>
@@ -286,11 +291,11 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
                           <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Component id="txtSoLuong" min="-2" pref="157" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="741" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="755" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
