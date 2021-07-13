@@ -8,9 +8,6 @@ package GiaoDien_NhanVien;
 import static java.lang.Thread.sleep;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-
-//sdnakjkjdkjasdkad
-//sakdjakdjadjajdkadl
 /**
  *
  * @author Tho
@@ -22,7 +19,7 @@ String CurrentUser;
      */
     public C_XuLyHoaDon() {
         initComponents();
-//        dongHo();
+        dongHo();
         setTitle("Hóa đơn");
     }
 
@@ -39,6 +36,8 @@ String CurrentUser;
         lbl_icon = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        lbl_gio = new javax.swing.JLabel();
+        lbl_ngaythang = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -79,17 +78,31 @@ String CurrentUser;
                 .addContainerGap(398, Short.MAX_VALUE))
         );
 
+        lbl_gio.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+
+        lbl_ngaythang.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 836, Short.MAX_VALUE)
+                .addContainerGap(329, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lbl_ngaythang, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl_gio, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(220, 220, 220)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(51, 51, 51)
+                .addComponent(lbl_gio, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lbl_ngaythang, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -132,42 +145,44 @@ String CurrentUser;
             }
         });
     }
-//    public void dongHo() {
-//        Thread clock;
-//        clock = new Thread() {
-//            public void run() {
-//                try {
-//                    while (true) {
-//                        Calendar cal = new GregorianCalendar();
-//                        int second = cal.get(Calendar.SECOND);
-//                        int minute = cal.get(Calendar.MINUTE);
-//                        int hour = cal.get(Calendar.HOUR_OF_DAY);
-//                        String thu;
-//                        int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
-//                        if (dayOfWeek == 1) {
-//                            thu = "Chủ nhật";
-//                        } else {
-//                            thu = "Thứ " + Integer.toString(dayOfWeek);
-//                        }
-//                        int dayOfMonth = cal.get(Calendar.DAY_OF_MONTH);
-//                        int month = cal.get(Calendar.MONTH);
-//                        int year = cal.get(Calendar.YEAR);
-//                        lbl_gio.setText(hour + ":" + minute + ":" + second);
-//                        lbl_ngaythang.setText(thu + " ngày " + dayOfMonth + " tháng " + (month + 1) + " năm " + year);
-//                        sleep(1000);
-//                    }
-//                } catch (Exception e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        };
-//        clock.start();
-//    }
+    public void dongHo() {
+        Thread clock;
+        clock = new Thread() {
+            public void run() {
+                try {
+                    while (true) {
+                        Calendar cal = new GregorianCalendar();
+                        int second = cal.get(Calendar.SECOND);
+                        int minute = cal.get(Calendar.MINUTE);
+                        int hour = cal.get(Calendar.HOUR_OF_DAY);
+                        String thu;
+                        int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
+                        if (dayOfWeek == 1) {
+                            thu = "Chủ nhật";
+                        } else {
+                            thu = "Thứ " + Integer.toString(dayOfWeek);
+                        }
+                        int dayOfMonth = cal.get(Calendar.DAY_OF_MONTH);
+                        int month = cal.get(Calendar.MONTH);
+                        int year = cal.get(Calendar.YEAR);
+                        lbl_gio.setText(hour + ":" + minute + ":" + second);
+                        lbl_ngaythang.setText(thu + " ngày " + dayOfMonth + " tháng " + (month + 1) + " năm " + year);
+                        sleep(1000);
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        clock.start();
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JLabel lbl_gio;
     private javax.swing.JLabel lbl_icon;
+    private javax.swing.JLabel lbl_ngaythang;
     // End of variables declaration//GEN-END:variables
 }
