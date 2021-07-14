@@ -357,7 +357,7 @@ public class A_BanHangFrame extends javax.swing.JFrame {
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Background/.jpg"))); // NOI18N
         jLabel10.setText("jLabel10");
-        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -320, 230, 1990));
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -320, 260, 1990));
 
         lblNewHD.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         lblNewHD.setText("Hóa đơn mới");
@@ -423,8 +423,7 @@ public class A_BanHangFrame extends javax.swing.JFrame {
                         .addComponent(btnReturn)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel1))
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -492,7 +491,7 @@ public class A_BanHangFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_lblAddBHMouseClicked
 
     private void lblOpenKHMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblOpenKHMouseClicked
-       new tableKhachHang().setVisible(true);
+      new  tableKhachHang().setVisible(true);
     }//GEN-LAST:event_lblOpenKHMouseClicked
 
     private void txtMaKhachHangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMaKhachHangActionPerformed
