@@ -48,6 +48,8 @@ public class DangNhapFrame extends javax.swing.JFrame {
         });
         lblCancel.setHorizontalTextPosition((int) CENTER_ALIGNMENT);
         btnLogin.setHorizontalTextPosition((int) CENTER_ALIGNMENT);
+        //jkujjjghjghjgjghjghj
+        //ghjghjghjghjghj
     }
    
 
