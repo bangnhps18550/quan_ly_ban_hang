@@ -142,10 +142,7 @@ Thread dongho;
         lblQuanLyKho.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblQuanLyKho.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_GiaoDienChinh/phonexanh.png"))); // NOI18N
         lblQuanLyKho.setText("Quản Lý Kho");
-<<<<<<< HEAD
-=======
         lblQuanLyKho.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
->>>>>>> 2c94f219632fc0fc0117e2a38ed425e0e6f79d28
         lblQuanLyKho.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lblQuanLyKho.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         lblQuanLyKho.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -291,25 +288,18 @@ Thread dongho;
     }//GEN-LAST:event_lblDangXuatMouseExited
 
     private void lblQuanLyKhoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblQuanLyKhoMousePressed
-<<<<<<< HEAD
-        new A_QuanLyKhoFrame().setVisible(true);
-=======
         new B_QuanLyKhoFrame().setVisible(true);
         this.dispose();
->>>>>>> 2c94f219632fc0fc0117e2a38ed425e0e6f79d28
     }//GEN-LAST:event_lblQuanLyKhoMousePressed
 
     private void lblKhachHangMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblKhachHangMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_lblKhachHangMouseClicked
-<<<<<<< HEAD
-=======
 
     private void lblBanHangMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBanHangMouseClicked
         new A_BanHangFrame().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_lblBanHangMouseClicked
->>>>>>> 2c94f219632fc0fc0117e2a38ed425e0e6f79d28
     public void loadDongHo() {
             dongho = new Thread() {
                 @Override

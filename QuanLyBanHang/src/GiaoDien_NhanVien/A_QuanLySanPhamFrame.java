@@ -96,11 +96,7 @@ public class A_QuanLySanPhamFrame extends javax.swing.JFrame {
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
-<<<<<<< HEAD
-        txtMaso = new javax.swing.JTextField();
-=======
         txtMaDT = new javax.swing.JTextField();
->>>>>>> 2c94f219632fc0fc0117e2a38ed425e0e6f79d28
         txtHoVaTen = new javax.swing.JTextField();
         lblId = new javax.swing.JLabel();
         lblName = new javax.swing.JLabel();
@@ -639,13 +635,8 @@ public class A_QuanLySanPhamFrame extends javax.swing.JFrame {
 
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
-<<<<<<< HEAD
-        txtMaso.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtMaso.setMinimumSize(new java.awt.Dimension(6, 25));
-=======
         txtMaDT.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtMaDT.setMinimumSize(new java.awt.Dimension(6, 25));
->>>>>>> 2c94f219632fc0fc0117e2a38ed425e0e6f79d28
 
         txtHoVaTen.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtHoVaTen.setMinimumSize(new java.awt.Dimension(6, 25));
@@ -670,11 +661,7 @@ public class A_QuanLySanPhamFrame extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtHoVaTen, javax.swing.GroupLayout.PREFERRED_SIZE, 341, javax.swing.GroupLayout.PREFERRED_SIZE)
-<<<<<<< HEAD
-                    .addComponent(txtMaso, javax.swing.GroupLayout.PREFERRED_SIZE, 341, javax.swing.GroupLayout.PREFERRED_SIZE))
-=======
                     .addComponent(txtMaDT, javax.swing.GroupLayout.PREFERRED_SIZE, 341, javax.swing.GroupLayout.PREFERRED_SIZE))
->>>>>>> 2c94f219632fc0fc0117e2a38ed425e0e6f79d28
                 .addGap(28, 28, 28))
         );
         jPanel6Layout.setVerticalGroup(
@@ -683,11 +670,7 @@ public class A_QuanLySanPhamFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblId)
-<<<<<<< HEAD
-                    .addComponent(txtMaso, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-=======
                     .addComponent(txtMaDT, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
->>>>>>> 2c94f219632fc0fc0117e2a38ed425e0e6f79d28
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblName, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -990,7 +973,6 @@ public class A_QuanLySanPhamFrame extends javax.swing.JFrame {
         new GiaoDienChinhNhanVienFrame("Hello").setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnReturnActionPerformed
-
     public void dongHo(){
         Thread clock;
            clock = new Thread() {
@@ -1021,8 +1003,7 @@ public class A_QuanLySanPhamFrame extends javax.swing.JFrame {
                }
            };
     clock.start();
-
-   
+    }
     /**
      * @param args the command line arguments
      */
@@ -1116,11 +1097,7 @@ public class A_QuanLySanPhamFrame extends javax.swing.JFrame {
     private javax.swing.JTextArea txtDiaChi;
     private javax.swing.JTextField txtDienThoai;
     private javax.swing.JTextField txtHoVaTen;
-<<<<<<< HEAD
-    private javax.swing.JTextField txtMaso;
-=======
     private javax.swing.JTextField txtMaDT;
->>>>>>> 2c94f219632fc0fc0117e2a38ed425e0e6f79d28
     private javax.swing.JTextField txtNgaySinh;
     private javax.swing.JTextField txtNoiSinh;
     private javax.swing.JTextField txtPassword;

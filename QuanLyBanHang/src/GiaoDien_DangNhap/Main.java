@@ -5,13 +5,9 @@
  */
 package GiaoDien_DangNhap;
 
-<<<<<<< HEAD
-import java.awt.Color;
-=======
 
 
 
->>>>>>> 2c94f219632fc0fc0117e2a38ed425e0e6f79d28
 
 /**
  *
@@ -26,12 +22,8 @@ public class Main extends javax.swing.JFrame {
         initComponents();
         PhanTram();
         setLocationRelativeTo(this);
-<<<<<<< HEAD
-       
-=======
         
 
->>>>>>> 2c94f219632fc0fc0117e2a38ed425e0e6f79d28
     }
     public void PhanTram() {
         Thread a;
@@ -47,13 +39,9 @@ public class Main extends javax.swing.JFrame {
                 } catch (Exception e) {
 
                 }
-<<<<<<< HEAD
-                new DangNhapFrame().setVisible(true);
-=======
                 DangNhapFrame a =new DangNhapFrame();
                 a.setVisible(true);  
                 a.txtUserName.setText("hihi");
->>>>>>> 2c94f219632fc0fc0117e2a38ed425e0e6f79d28
                 dispose();
             }
         }
@@ -71,34 +59,17 @@ public class Main extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-<<<<<<< HEAD
-        myProgress = new javax.swing.JProgressBar();
-=======
->>>>>>> 2c94f219632fc0fc0117e2a38ed425e0e6f79d28
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         lblPhanTram = new javax.swing.JLabel();
-<<<<<<< HEAD
-=======
         myProgress = new javax.swing.JProgressBar();
->>>>>>> 2c94f219632fc0fc0117e2a38ed425e0e6f79d28
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-<<<<<<< HEAD
-        myProgress.setBackground(new java.awt.Color(0, 102, 255));
-        myProgress.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        myProgress.setForeground(new java.awt.Color(0, 0, 255));
-        myProgress.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        myProgress.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
-        myProgress.setDoubleBuffered(true);
-
-=======
->>>>>>> 2c94f219632fc0fc0117e2a38ed425e0e6f79d28
         jLabel1.setBackground(new java.awt.Color(50, 0, 255));
         jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(12, 114, 209));
@@ -108,21 +79,15 @@ public class Main extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(12, 115, 206));
         jLabel2.setText("Loading System...");
 
-<<<<<<< HEAD
-=======
         jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Downloads\\thelast.png")); // NOI18N
 
->>>>>>> 2c94f219632fc0fc0117e2a38ed425e0e6f79d28
         lblPhanTram.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         lblPhanTram.setForeground(new java.awt.Color(12, 114, 204));
         lblPhanTram.setText("%");
 
-<<<<<<< HEAD
-=======
         myProgress.setBackground(new java.awt.Color(153, 204, 0));
         myProgress.setForeground(new java.awt.Color(0, 0, 255));
 
->>>>>>> 2c94f219632fc0fc0117e2a38ed425e0e6f79d28
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -138,13 +103,7 @@ public class Main extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
-<<<<<<< HEAD
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(26, 26, 26)
-                                .addComponent(lblPhanTram, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
-=======
                             .addComponent(lblPhanTram, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
->>>>>>> 2c94f219632fc0fc0117e2a38ed425e0e6f79d28
                         .addGap(158, 158, 158))))
             .addComponent(myProgress, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -157,20 +116,12 @@ public class Main extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(120, 120, 120)
                         .addComponent(jLabel2)
-<<<<<<< HEAD
-                        .addGap(51, 51, 51)
-=======
                         .addGap(50, 50, 50)
->>>>>>> 2c94f219632fc0fc0117e2a38ed425e0e6f79d28
                         .addComponent(lblPhanTram, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(62, 62, 62)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)))
-<<<<<<< HEAD
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
-=======
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
->>>>>>> 2c94f219632fc0fc0117e2a38ed425e0e6f79d28
                 .addComponent(myProgress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
