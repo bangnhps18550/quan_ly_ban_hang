@@ -491,7 +491,7 @@ public class A_BanHangFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_lblAddBHMouseClicked
 
     private void lblOpenKHMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblOpenKHMouseClicked
-      new  tableKhachHang().setVisible(true);
+
     }//GEN-LAST:event_lblOpenKHMouseClicked
 
     private void txtMaKhachHangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMaKhachHangActionPerformed
