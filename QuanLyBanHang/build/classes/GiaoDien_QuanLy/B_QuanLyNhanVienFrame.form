@@ -1065,6 +1065,7 @@
                   <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="txtTimKiem" min="-2" pref="29" max="-2" attributes="0"/>
+<<<<<<< HEAD
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jRadioButton1" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1072,6 +1073,9 @@
                       <Component id="jRadioButton3" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
+=======
+                  <EmptySpace pref="341" max="32767" attributes="0"/>
+>>>>>>> 2c94f219632fc0fc0117e2a38ed425e0e6f79d28
                   <Component id="btnDangxuat" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
               </Group>

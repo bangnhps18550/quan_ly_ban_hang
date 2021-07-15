@@ -1,6 +1,6 @@
 package GiaoDien_DangNhap;
 
-
+/*test_tiep cai_demo*/
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -243,6 +243,6 @@ public class DangNhapFrame extends javax.swing.JFrame {
     private javax.swing.JLabel lblChangePassWord;
     private javax.swing.JLabel leftPanel;
     private javax.swing.JLabel rightPanel;
-    private javax.swing.JTextField txtUserName;
+    public javax.swing.JTextField txtUserName;
     // End of variables declaration//GEN-END:variables
 }
