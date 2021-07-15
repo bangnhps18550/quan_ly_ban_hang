@@ -65,7 +65,6 @@ public class B_QuanLyNhanVienFrame extends javax.swing.JFrame {
 //     background.setBounds(0,0,1950,1100);
 //     add(background);
 //    }
-    
      public void setPanel(){
      JLabel background;
      ImageIcon img=new ImageIcon(getClass().getResource("/Img_Background/NhanVienFrame_PanelThem.png"));

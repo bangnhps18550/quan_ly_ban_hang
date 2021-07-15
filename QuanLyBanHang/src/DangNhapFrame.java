@@ -1,4 +1,6 @@
+package GiaoDien_DangNhap;
 
+/*test_tiep cai_demo*/
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -46,6 +48,8 @@ public class DangNhapFrame extends javax.swing.JFrame {
         });
         lblCancel.setHorizontalTextPosition((int) CENTER_ALIGNMENT);
         btnLogin.setHorizontalTextPosition((int) CENTER_ALIGNMENT);
+        //jkujjjghjghjgjghjghj
+        //ghjghjghjghjghj
     }
    
 
@@ -67,7 +71,7 @@ public class DangNhapFrame extends javax.swing.JFrame {
         chkAgree = new javax.swing.JCheckBox();
         lblCancel = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        lblChangePassWord = new javax.swing.JLabel();
         btnLogin = new javax.swing.JLabel();
         rightPanel = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -75,9 +79,7 @@ public class DangNhapFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
-        setMaximumSize(new java.awt.Dimension(900, 650));
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(900, 650));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel10.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
@@ -119,6 +121,7 @@ public class DangNhapFrame extends javax.swing.JFrame {
         lblCancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_GiaoDienChinh/nut.png"))); // NOI18N
         lblCancel.setText("Cancel");
         lblCancel.setToolTipText("");
+        lblCancel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblCancel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lblCancel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -133,12 +136,17 @@ public class DangNhapFrame extends javax.swing.JFrame {
         jLabel2.setText("Login");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 100, 320, 60));
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_GiaoDienChinh/DangXuat.png"))); // NOI18N
-        jLabel3.setText("Change Password");
-        jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 50, 190, 40));
+        lblChangePassWord.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblChangePassWord.setForeground(new java.awt.Color(255, 255, 255));
+        lblChangePassWord.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_GiaoDienChinh/DangXuat.png"))); // NOI18N
+        lblChangePassWord.setText("Change Password");
+        lblChangePassWord.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        lblChangePassWord.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblChangePassWordMouseClicked(evt);
+            }
+        });
+        getContentPane().add(lblChangePassWord, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 50, 190, 40));
 
         btnLogin.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         btnLogin.setForeground(new java.awt.Color(255, 255, 255));
@@ -180,6 +188,10 @@ public class DangNhapFrame extends javax.swing.JFrame {
     private void btnLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLoginMouseClicked
        
     }//GEN-LAST:event_btnLoginMouseClicked
+
+    private void lblChangePassWordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblChangePassWordMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblChangePassWordMouseClicked
 
     /**
      * @param args the command line arguments
@@ -224,13 +236,13 @@ public class DangNhapFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JLabel lblCancel;
+    private javax.swing.JLabel lblChangePassWord;
     private javax.swing.JLabel leftPanel;
     private javax.swing.JLabel rightPanel;
-    private javax.swing.JTextField txtUserName;
+    public javax.swing.JTextField txtUserName;
     // End of variables declaration//GEN-END:variables
 }
