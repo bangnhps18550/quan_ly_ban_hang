@@ -121,6 +121,7 @@ public class DangNhapFrame extends javax.swing.JFrame {
         lblCancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_GiaoDienChinh/nut.png"))); // NOI18N
         lblCancel.setText("Cancel");
         lblCancel.setToolTipText("");
+        lblCancel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblCancel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lblCancel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

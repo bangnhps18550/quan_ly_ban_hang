@@ -28,13 +28,13 @@ Thread dongho;
     public GiaoDienChinhNhanVienFrame(String CurrentUser) {
         initComponents();
         lblBanHang.setIconTextGap(20);
-        lblSanPham.setIconTextGap(20);
+        lblQuanLyKho.setIconTextGap(20);
         lblKhachHang.setIconTextGap(20);
-        lblSanPham.setIconTextGap(20);
+        lblQuanLyKho.setIconTextGap(20);
         lblAccount.setText("Trương Anh Thọ");
         ImageIcon ig=new ImageIcon(getClass().getResource("/Img_Icon/iconfram.png"));
         setIconImage(ig.getImage());
-        lblSanPham.setOpaque(true);
+        lblQuanLyKho.setOpaque(true);
         lblBanHang.setOpaque(true);
         lblDangXuat.setOpaque(true);
         lblKhachHang.setOpaque(true);
@@ -57,7 +57,7 @@ Thread dongho;
         jLabel2 = new javax.swing.JLabel();
         panelMid = new javax.swing.JPanel();
         lblBanHang = new javax.swing.JLabel();
-        lblSanPham = new javax.swing.JLabel();
+        lblQuanLyKho = new javax.swing.JLabel();
         lblKhachHang = new javax.swing.JLabel();
         lblDangXuat = new javax.swing.JLabel();
         lblDongHo = new javax.swing.JLabel();
@@ -121,6 +121,7 @@ Thread dongho;
         lblBanHang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_GiaoDienChinh/giohangxanh.png"))); // NOI18N
         lblBanHang.setText("Bán Hàng");
         lblBanHang.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        lblBanHang.setInheritsPopupMenu(false);
         lblBanHang.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         lblBanHang.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -132,22 +133,25 @@ Thread dongho;
         });
         panelMid.add(lblBanHang);
 
-        lblSanPham.setBackground(new java.awt.Color(242, 242, 242));
-        lblSanPham.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblSanPham.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblSanPham.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_GiaoDienChinh/phonexanh.png"))); // NOI18N
-        lblSanPham.setText("Hóa Đơn");
-        lblSanPham.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        lblSanPham.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        lblSanPham.addMouseListener(new java.awt.event.MouseAdapter() {
+        lblQuanLyKho.setBackground(new java.awt.Color(242, 242, 242));
+        lblQuanLyKho.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblQuanLyKho.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblQuanLyKho.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_GiaoDienChinh/phonexanh.png"))); // NOI18N
+        lblQuanLyKho.setText("Quản Lý Kho");
+        lblQuanLyKho.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        lblQuanLyKho.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        lblQuanLyKho.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                lblSanPhamMouseEntered(evt);
+                lblQuanLyKhoMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                lblSanPhamMouseExited(evt);
+                lblQuanLyKhoMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                lblQuanLyKhoMousePressed(evt);
             }
         });
-        panelMid.add(lblSanPham);
+        panelMid.add(lblQuanLyKho);
 
         lblKhachHang.setBackground(new java.awt.Color(242, 242, 242));
         lblKhachHang.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -157,6 +161,9 @@ Thread dongho;
         lblKhachHang.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lblKhachHang.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         lblKhachHang.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblKhachHangMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 lblKhachHangMouseEntered(evt);
             }
@@ -218,31 +225,33 @@ Thread dongho;
     }// </editor-fold>//GEN-END:initComponents
 
     private void lblBanHangMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBanHangMouseEntered
-        lblBanHang.setBackground(new Color(66,61,241));
+        lblBanHang.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        lblBanHang.setBackground(new Color(66,61,241));   
         lblBanHang.setForeground(Color.white);  
         lblBanHang.setIcon(new ImageIcon(getClass().getResource("/Img_GiaoDienChinh/giohangtrang.png")));   // TODO add your handling code here:
     }//GEN-LAST:event_lblBanHangMouseEntered
 
     private void lblBanHangMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBanHangMouseExited
-        lblBanHang.setCursor(new Cursor(Cursor.HAND_CURSOR));
         lblBanHang.setBackground(new Color(242,242,242));
         lblBanHang.setForeground(Color.black);  
         lblBanHang.setIcon(new ImageIcon(getClass().getResource("/Img_GiaoDienChinh/giohangxanh.png")));        // TODO add your handling code here:
     }//GEN-LAST:event_lblBanHangMouseExited
 
-    private void lblSanPhamMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSanPhamMouseEntered
-        lblSanPham.setBackground(new Color(66,61,241));
-        lblSanPham.setForeground(Color.white);  
-        lblSanPham.setIcon(new ImageIcon(getClass().getResource("/Img_GiaoDienChinh/phonetrang.png")));   // TODO add your handling code here:
-    }//GEN-LAST:event_lblSanPhamMouseEntered
+    private void lblQuanLyKhoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblQuanLyKhoMouseEntered
+        lblQuanLyKho.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        lblQuanLyKho.setBackground(new Color(66,61,241));
+        lblQuanLyKho.setForeground(Color.white);  
+        lblQuanLyKho.setIcon(new ImageIcon(getClass().getResource("/Img_GiaoDienChinh/phonetrang.png")));   // TODO add your handling code here:
+    }//GEN-LAST:event_lblQuanLyKhoMouseEntered
 
-    private void lblSanPhamMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSanPhamMouseExited
-        lblSanPham.setBackground(new Color(242,242,242));
-        lblSanPham.setForeground(Color.black);  
-        lblSanPham.setIcon(new ImageIcon(getClass().getResource("/Img_GiaoDienChinh/phonexanh.png")));     // TODO add your handling code here:
-    }//GEN-LAST:event_lblSanPhamMouseExited
+    private void lblQuanLyKhoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblQuanLyKhoMouseExited
+        lblQuanLyKho.setBackground(new Color(242,242,242));
+        lblQuanLyKho.setForeground(Color.black);  
+        lblQuanLyKho.setIcon(new ImageIcon(getClass().getResource("/Img_GiaoDienChinh/phonexanh.png")));     // TODO add your handling code here:
+    }//GEN-LAST:event_lblQuanLyKhoMouseExited
 
     private void lblKhachHangMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblKhachHangMouseEntered
+        lblBanHang.setCursor(new Cursor(Cursor.HAND_CURSOR));
         lblKhachHang.setBackground(new Color(66,61,241));
         lblKhachHang.setForeground(Color.white);  
         lblKhachHang.setIcon(new ImageIcon(getClass().getResource("/Img_GiaoDienChinh/khachhangtrang.png")));    // TODO add your handling code here:
@@ -259,6 +268,7 @@ Thread dongho;
     }//GEN-LAST:event_lblDangXuatMouseClicked
 
     private void lblDangXuatMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblDangXuatMouseEntered
+        lblBanHang.setCursor(new Cursor(Cursor.HAND_CURSOR));
         lblDangXuat.setBackground(new Color(66,61,241));
         lblDangXuat.setForeground(Color.white);  
         lblDangXuat.setIcon(new ImageIcon(getClass().getResource("/Img_GiaoDienChinh/dangxuattrang.png")));    // TODO add your handling code here:
@@ -269,6 +279,14 @@ Thread dongho;
         lblDangXuat.setForeground(Color.black);  
         lblDangXuat.setIcon(new ImageIcon(getClass().getResource("/Img_GiaoDienChinh/dangxuatxanh.png")));    // TODO add your handling code here:
     }//GEN-LAST:event_lblDangXuatMouseExited
+
+    private void lblQuanLyKhoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblQuanLyKhoMousePressed
+        new A_QuanLyKhoFrame().setVisible(true);
+    }//GEN-LAST:event_lblQuanLyKhoMousePressed
+
+    private void lblKhachHangMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblKhachHangMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblKhachHangMouseClicked
     public void loadDongHo() {
             dongho = new Thread() {
                 @Override
@@ -332,7 +350,7 @@ Thread dongho;
     private javax.swing.JLabel lblDangXuat;
     private javax.swing.JLabel lblDongHo;
     private javax.swing.JLabel lblKhachHang;
-    private javax.swing.JLabel lblSanPham;
+    private javax.swing.JLabel lblQuanLyKho;
     private javax.swing.JPanel panelMid;
     private javax.swing.JPanel panelheader;
     // End of variables declaration//GEN-END:variables
