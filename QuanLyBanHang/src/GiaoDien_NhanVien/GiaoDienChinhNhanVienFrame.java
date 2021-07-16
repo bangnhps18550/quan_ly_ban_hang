@@ -66,7 +66,7 @@ Thread dongho;
         setTitle("Quản Lý Bán Hàng");
         setResizable(false);
 
-        panelheader.setBackground(new java.awt.Color(63, 58, 228));
+        panelheader.setBackground(new java.awt.Color(26, 52, 158));
 
         lblAccount.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         lblAccount.setForeground(new java.awt.Color(255, 255, 255));
@@ -120,10 +120,14 @@ Thread dongho;
         lblBanHang.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblBanHang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_GiaoDienChinh/giohangxanh.png"))); // NOI18N
         lblBanHang.setText("Bán Hàng");
+        lblBanHang.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblBanHang.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lblBanHang.setInheritsPopupMenu(false);
         lblBanHang.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         lblBanHang.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblBanHangMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 lblBanHangMouseEntered(evt);
             }
@@ -138,6 +142,7 @@ Thread dongho;
         lblQuanLyKho.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblQuanLyKho.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_GiaoDienChinh/phonexanh.png"))); // NOI18N
         lblQuanLyKho.setText("Quản Lý Kho");
+        lblQuanLyKho.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblQuanLyKho.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lblQuanLyKho.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         lblQuanLyKho.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -158,6 +163,7 @@ Thread dongho;
         lblKhachHang.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblKhachHang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_GiaoDienChinh/khachhangxanh.png"))); // NOI18N
         lblKhachHang.setText("Khách Hàng");
+        lblKhachHang.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblKhachHang.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lblKhachHang.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         lblKhachHang.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -178,6 +184,7 @@ Thread dongho;
         lblDangXuat.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblDangXuat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_GiaoDienChinh/dangxuatxanh.png"))); // NOI18N
         lblDangXuat.setText("Đăng Xuất");
+        lblDangXuat.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblDangXuat.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lblDangXuat.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         lblDangXuat.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -281,12 +288,18 @@ Thread dongho;
     }//GEN-LAST:event_lblDangXuatMouseExited
 
     private void lblQuanLyKhoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblQuanLyKhoMousePressed
-        new A_QuanLyKhoFrame().setVisible(true);
+        new B_QuanLyKhoFrame().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_lblQuanLyKhoMousePressed
 
     private void lblKhachHangMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblKhachHangMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_lblKhachHangMouseClicked
+
+    private void lblBanHangMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBanHangMouseClicked
+        new A_BanHangFrame().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_lblBanHangMouseClicked
     public void loadDongHo() {
             dongho = new Thread() {
                 @Override

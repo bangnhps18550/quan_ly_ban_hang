@@ -3,10 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/D:/JAVAX/a/QuanLyBanHang/src/GiaoDien_NhanVien/A_QuanLyKhoFrame.java</file>
             <file>file:/D:/JAVAX/a/QuanLyBanHang/src/GiaoDien_NhanVien/GiaoDienChinhNhanVienFrame.java</file>
             <file>file:/D:/JAVAX/a/QuanLyBanHang/src/GiaoDien_NhanVien/A_NhaSanXuatFrame.java</file>
             <file>file:/D:/JAVAX/a/QuanLyBanHang/src/GiaoDien_NhanVien/A_BanHangFrame.java</file>
+=======
+            <file>file:/D:/Quan-ly-du-an/Source_code_nhom6/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_QuanLy/C_GiamSatHoaDon.java</file>
+            <file>file:/D:/Quan-ly-du-an/Source_code_nhom6/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_QuanLy/B_QuanLyNhanVienFrame.java</file>
+            <file>file:/D:/Quan-ly-du-an/Source_code_nhom6/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_NhanVien/B_QuanLyKhoFrame.java</file>
+            <file>file:/D:/Quan-ly-du-an/Source_code_nhom6/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_NhanVien/A_QuanLySanPhamFrame.java</file>
+            <file>file:/D:/Quan-ly-du-an/Source_code_nhom6/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_NhanVien/B_KhachHangFrame.java</file>
+            <file>file:/D:/Quan-ly-du-an/Source_code_nhom6/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_NhanVien/GiaoDienChinhNhanVienFrame.java</file>
+>>>>>>> 19209a0097739991f177665d5490866f423ef9a7
         </group>
     </open-files>
 </project-private>

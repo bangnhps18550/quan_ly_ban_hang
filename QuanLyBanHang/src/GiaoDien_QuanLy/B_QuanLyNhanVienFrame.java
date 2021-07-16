@@ -55,7 +55,7 @@ public class B_QuanLyNhanVienFrame extends javax.swing.JFrame {
     public  B_QuanLyNhanVienFrame() {
         initComponents();
         dongHo();
-        setPanel();
+//        setPanel();
         getContentPane().setBackground(new Color(245,245,245));
     }
 //    public void setBackground(){
@@ -65,13 +65,13 @@ public class B_QuanLyNhanVienFrame extends javax.swing.JFrame {
 //     background.setBounds(0,0,1950,1100);
 //     add(background);
 //    }
-     public void setPanel(){
-     JLabel background;
-     ImageIcon img=new ImageIcon(getClass().getResource("/Img_Background/NhanVienFrame_PanelThem.png"));
-     background =new JLabel("",img,JLabel.CENTER);
-     background.setBounds(0,0,400,1600);
-     panelThem.add(background);
-    }
+//     public void setPanel(){
+//     JLabel background;
+//     ImageIcon img=new ImageIcon(getClass().getResource("/Img_Background/NhanVienFrame_PanelThem.png"));
+//     background =new JLabel("",img,JLabel.CENTER);
+//     background.setBounds(0,0,400,1600);
+//     panelThem.add(background);
+//    }
    
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -768,7 +768,7 @@ public class B_QuanLyNhanVienFrame extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(txtTimKiem, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 341, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnDangxuat)
                 .addGap(22, 22, 22))
         );

@@ -5,6 +5,10 @@
  */
 package GiaoDien_DangNhap;
 
+
+
+
+
 /**
  *
  * @author Admin
@@ -18,6 +22,8 @@ public class Main extends javax.swing.JFrame {
         initComponents();
         PhanTram();
         setLocationRelativeTo(this);
+        
+
     }
     public void PhanTram() {
         Thread a;
@@ -26,14 +32,16 @@ public class Main extends javax.swing.JFrame {
             public void run() {
                 try {
                     for (int i = 0; i <= 100; i++) {
-                        Thread.sleep(30);
+                        Thread.sleep(20);
                         myProgress.setValue(i);
                         lblPhanTram.setText(String.valueOf(i) + "%");
                     }
                 } catch (Exception e) {
 
                 }
-                new DangNhapFrame().setVisible(true);
+                DangNhapFrame a =new DangNhapFrame();
+                a.setVisible(true);  
+                a.txtUserName.setText("hihi");
                 dispose();
             }
         }
