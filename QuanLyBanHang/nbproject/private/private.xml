@@ -1,53 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-            <file>file:/D:/FPT_POLY/Agile/DuanQuanlybanHang/QuanLyBanHang/src/GiaoDien_NhanVien/B_QuanLyKhoFrame.java</file>
-            <file>file:/D:/FPT_POLY/Agile/DuanQuanlybanHang/QuanLyBanHang/src/GiaoDien_NhanVien/B_Showsanpham.java</file>
-            <file>file:/D:/FPT_POLY/Agile/DuanQuanlybanHang/QuanLyBanHang/src/GiaoDien_NhanVien/B_KhachHangFrame.java</file>
-            <file>file:/D:/FPT_POLY/Agile/DuanQuanlybanHang/QuanLyBanHang/src/GiaoDien_NhanVien/GiaoDienChinhNhanVienFrame.java</file>
-            <file>file:/D:/FPT_POLY/Agile/DuanQuanlybanHang/QuanLyBanHang/src/GiaoDien_QuanLy/B_FullTableNhanVienFrame.java</file>
-            <file>file:/D:/FPT_POLY/Agile/DuanQuanlybanHang/QuanLyBanHang/src/GiaoDien_QuanLy/C_GiamSatHoaDon.java</file>
-            <file>file:/D:/FPT_POLY/Agile/DuanQuanlybanHang/QuanLyBanHang/src/GiaoDien_NhanVien/A_QuanLyKhoFrame.java</file>
-            <file>file:/D:/FPT_POLY/Agile/DuanQuanlybanHang/QuanLyBanHang/src/GiaoDien_QuanLy/A_ThongKeFrame.java</file>
-            <file>file:/D:/FPT_POLY/Agile/DuanQuanlybanHang/QuanLyBanHang/src/GiaoDien_NhanVien/A_BanHangFrame.java</file>
-            <file>file:/D:/FPT_POLY/Agile/DuanQuanlybanHang/QuanLyBanHang/src/GiaoDien_NhanVien/A_QuanLySanPhamFrame.java</file>
-            <file>file:/D:/FPT_POLY/Agile/DuanQuanlybanHang/QuanLyBanHang/src/GiaoDien_QuanLy/C_XuLyHoaDon.java</file>
-            <file>file:/D:/FPT_POLY/Agile/DuanQuanlybanHang/QuanLyBanHang/src/GiaoDien_QuanLy/GiaoDienQuanLyChinhFrame.java</file>
-            <file>file:/D:/FPT_POLY/Agile/DuanQuanlybanHang/QuanLyBanHang/src/GiaoDien_NhanVien/C_XuLyHoaDon.java</file>
-=======
-<<<<<<< Updated upstream
-            <file>file:/D:/JAVAX/a/QuanLyBanHang/src/GiaoDien_NhanVien/A_QuanLyKhoFrame.java</file>
-            <file>file:/D:/JAVAX/a/QuanLyBanHang/src/GiaoDien_NhanVien/GiaoDienChinhNhanVienFrame.java</file>
-            <file>file:/D:/JAVAX/a/QuanLyBanHang/src/GiaoDien_NhanVien/B_KhachHangFrame.java</file>
-            <file>file:/D:/JAVAX/a/QuanLyBanHang/src/GiaoDien_NhanVien/B_QuanLyKhoFrame.java</file>
-            <file>file:/D:/JAVAX/a/QuanLyBanHang/src/GiaoDien_NhanVien/A_BanHangFrame.java</file>
-=======
-<<<<<<< HEAD
-            <file>file:/D:/JAVAX/a/QuanLyBanHang/src/GiaoDien_NhanVien/A_QuanLyKhoFrame.java</file>
-            <file>file:/D:/JAVAX/a/QuanLyBanHang/src/GiaoDien_NhanVien/GiaoDienChinhNhanVienFrame.java</file>
-            <file>file:/D:/JAVAX/a/QuanLyBanHang/src/GiaoDien_DangNhap/DoiMatKhauFrame.java</file>
-            <file>file:/D:/JAVAX/a/QuanLyBanHang/src/GiaoDien_NhanVien/A_QuanLySanPhamFrame.java</file>
-            <file>file:/D:/JAVAX/a/QuanLyBanHang/src/GiaoDien_NhanVien/C_GiamSatHoaDon.java</file>
-            <file>file:/D:/JAVAX/a/QuanLyBanHang/src/GiaoDien_NhanVien/B_KhachHangFrame.java</file>
-            <file>file:/D:/JAVAX/a/QuanLyBanHang/src/GiaoDien_NhanVien/A_NhaSanXuatFrame.java</file>
-            <file>file:/D:/JAVAX/a/QuanLyBanHang/src/GiaoDien_DangNhap/Main.java</file>
-            <file>file:/D:/JAVAX/a/QuanLyBanHang/src/GiaoDien_NhanVien/A_BanHangFrame.java</file>
-            <file>file:/D:/JAVAX/a/QuanLyBanHang/src/GiaoDien_DangNhap/DangNhapFrame.java</file>
-=======
-            <file>file:/D:/AGILE-SCRUM/DuAn_QuanLyBanHang/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_NhanVien/GiaoDienChinhNhanVienFrame.java</file>
-            <file>file:/D:/AGILE-SCRUM/DuAn_QuanLyBanHang/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_DangNhap/Main.java</file>
-            <file>file:/D:/AGILE-SCRUM/DuAn_QuanLyBanHang/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_DangNhap/DoiMatKhauFrame.java</file>
-            <file>file:/D:/AGILE-SCRUM/DuAn_QuanLyBanHang/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_NhanVien/A_NhaSanXuatFrame.java</file>
-            <file>file:/D:/AGILE-SCRUM/DuAn_QuanLyBanHang/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_NhanVien/tableKhachHang.java</file>
-            <file>file:/D:/AGILE-SCRUM/DuAn_QuanLyBanHang/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_NhanVien/A_BanHangFrame.java</file>
-            <file>file:/D:/AGILE-SCRUM/DuAn_QuanLyBanHang/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_DangNhap/DangNhapFrame.java</file>
-            <file>file:/D:/AGILE-SCRUM/DuAn_QuanLyBanHang/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_NhanVien/B_QuanLyKhoFrame.java</file>
-            <file>file:/D:/AGILE-SCRUM/DuAn_QuanLyBanHang/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_NhanVien/A_QuanLySanPhamFrame.java</file>
->>>>>>> 2c94f219632fc0fc0117e2a38ed425e0e6f79d28
->>>>>>> Stashed changes
->>>>>>> 5e3086c1f9aa4f9c749afe5191c99fba8d8db736
+            <file>file:/D:/Quan-ly-du-an/Source_code_nhom6/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_QuanLy/C_GiamSatHoaDon.java</file>
+            <file>file:/D:/Quan-ly-du-an/Source_code_nhom6/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_QuanLy/B_QuanLyNhanVienFrame.java</file>
+            <file>file:/D:/Quan-ly-du-an/Source_code_nhom6/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_NhanVien/A_BanHangFrame.java</file>
+            <file>file:/D:/Quan-ly-du-an/Source_code_nhom6/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_NhanVien/C_XuLyHoaDon.java</file>
+            <file>file:/D:/Quan-ly-du-an/Source_code_nhom6/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_DangNhap/Main.java</file>
+            <file>file:/D:/Quan-ly-du-an/Source_code_nhom6/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_NhanVien/B_Showsanpham.java</file>
+            <file>file:/D:/Quan-ly-du-an/Source_code_nhom6/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_NhanVien/B_QuanLyKhoFrame.java</file>
+            <file>file:/D:/Quan-ly-du-an/Source_code_nhom6/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_NhanVien/A_QuanLyKhoFrame.java</file>
+            <file>file:/D:/Quan-ly-du-an/Source_code_nhom6/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_NhanVien/A_QuanLySanPhamFrame.java</file>
+            <file>file:/D:/Quan-ly-du-an/Source_code_nhom6/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_NhanVien/B_KhachHangFrame.java</file>
+            <file>file:/D:/Quan-ly-du-an/Source_code_nhom6/quan_ly_ban_hang/QuanLyBanHang/src/GiaoDien_NhanVien/GiaoDienChinhNhanVienFrame.java</file>
         </group>
     </open-files>
 </project-private>
