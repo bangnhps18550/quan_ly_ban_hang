@@ -25,7 +25,8 @@ public class A_BanHangFrame extends javax.swing.JFrame {
         setIconImage(ig.getImage());
         setTitle("Bán Hàng");
         dongho();
-        
+        fropensanpham1.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        fropensanpham2.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
     }
     public void dongho() {
         Thread a = new Thread(new Runnable() {
@@ -66,6 +67,10 @@ public class A_BanHangFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        fropensanpham1 = new javax.swing.JFrame();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        fropensanpham2 = new javax.swing.JFrame();
         jLabel1 = new javax.swing.JLabel();
         btnReturn = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
@@ -114,6 +119,46 @@ public class A_BanHangFrame extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         lblTraKhach = new javax.swing.JLabel();
         txtTienKhach = new javax.swing.JTextField();
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane2.setViewportView(jTable1);
+
+        javax.swing.GroupLayout fropensanpham1Layout = new javax.swing.GroupLayout(fropensanpham1.getContentPane());
+        fropensanpham1.getContentPane().setLayout(fropensanpham1Layout);
+        fropensanpham1Layout.setHorizontalGroup(
+            fropensanpham1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(fropensanpham1Layout.createSequentialGroup()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 25, Short.MAX_VALUE))
+        );
+        fropensanpham1Layout.setVerticalGroup(
+            fropensanpham1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(fropensanpham1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout fropensanpham2Layout = new javax.swing.GroupLayout(fropensanpham2.getContentPane());
+        fropensanpham2.getContentPane().setLayout(fropensanpham2Layout);
+        fropensanpham2Layout.setHorizontalGroup(
+            fropensanpham2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        fropensanpham2Layout.setVerticalGroup(
+            fropensanpham2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -489,6 +534,9 @@ public class A_BanHangFrame extends javax.swing.JFrame {
 
     private void lblOpenSPMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblOpenSPMouseClicked
         // TODO add your handling code here:
+        fropensanpham2.setLocationRelativeTo(null);
+        fropensanpham2.setSize(400, 400);
+        fropensanpham2.setVisible(true);
     }//GEN-LAST:event_lblOpenSPMouseClicked
 
     private void lblAddBHMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAddBHMouseClicked
@@ -497,6 +545,9 @@ public class A_BanHangFrame extends javax.swing.JFrame {
 
     private void lblOpenKHMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblOpenKHMouseClicked
 //       new tableKhachHang().setVisible(true);
+        fropensanpham1.setLocationRelativeTo(null);
+        fropensanpham1.setSize(400, 400);
+        fropensanpham1.setVisible(true);
     }//GEN-LAST:event_lblOpenKHMouseClicked
 
     private void txtMaKhachHangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMaKhachHangActionPerformed
@@ -534,13 +585,16 @@ public class A_BanHangFrame extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new A_BanHangFrame().setVisible(true);
+                A_BanHangFrame x = new A_BanHangFrame();
+                x.setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnReturn;
+    private javax.swing.JFrame fropensanpham1;
+    private javax.swing.JFrame fropensanpham2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -562,9 +616,11 @@ public class A_BanHangFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JTable jTable1;
     private javax.swing.JLabel lblAddBH;
     private javax.swing.JLabel lblDate;
     private javax.swing.JLabel lblHoTenNV;
