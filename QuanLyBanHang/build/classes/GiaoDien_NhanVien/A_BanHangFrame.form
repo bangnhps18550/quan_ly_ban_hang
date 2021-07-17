@@ -130,6 +130,7 @@
                       <Component id="jPanel3" min="-2" pref="223" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
+<<<<<<< Updated upstream
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Component id="btnReturn" min="-2" max="-2" attributes="0"/>
@@ -139,9 +140,18 @@
                           <Component id="jPanel2" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+=======
+                      <Component id="btnReturn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+>>>>>>> Stashed changes
                   </Group>
+                  <Component id="jPanel2" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
+<<<<<<< Updated upstream
               <EmptySpace min="-2" max="-2" attributes="0"/>
+=======
+>>>>>>> Stashed changes
           </Group>
       </Group>
     </DimensionLayout>
@@ -153,6 +163,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="btnReturn" min="-2" max="-2" attributes="0"/>
+<<<<<<< Updated upstream
                       <EmptySpace min="-2" pref="156" max="-2" attributes="0"/>
                       <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -160,6 +171,17 @@
                       <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
+=======
+                  </Group>
+              </Group>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
+                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+>>>>>>> Stashed changes
                       <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -191,7 +213,11 @@
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
+<<<<<<< Updated upstream
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+=======
+                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+>>>>>>> Stashed changes
                       <Component id="jScrollPane1" min="-2" pref="334" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -266,12 +292,21 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                               <Component id="txtTenKhachHang" min="-2" max="-2" attributes="0"/>
+<<<<<<< Updated upstream
                           </Group>
                           <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="txtEmail" pref="296" max="32767" attributes="0"/>
                               <Component id="txtTenKH" max="32767" attributes="0"/>
                           </Group>
+=======
+                          </Group>
+                          <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="txtEmail" pref="296" max="32767" attributes="0"/>
+                              <Component id="txtTenKH" max="32767" attributes="0"/>
+                          </Group>
+>>>>>>> Stashed changes
                           <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
                           <Component id="lblOpenKH" min="-2" max="-2" attributes="0"/>
                       </Group>
@@ -450,7 +485,11 @@
                           </Group>
                       </Group>
                   </Group>
+<<<<<<< Updated upstream
                   <EmptySpace pref="20" max="32767" attributes="0"/>
+=======
+                  <EmptySpace type="unrelated" pref="34" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
                   <Component id="jSeparator2" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -733,7 +772,11 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+<<<<<<< Updated upstream
               <AbsoluteConstraints x="0" y="-320" width="230" height="1990"/>
+=======
+              <AbsoluteConstraints x="0" y="-320" width="260" height="1990"/>
+>>>>>>> Stashed changes
             </Constraint>
           </Constraints>
         </Component>

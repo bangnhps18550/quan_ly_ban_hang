@@ -20,13 +20,19 @@ public class A_BanHangFrame extends javax.swing.JFrame {
      */
     public A_BanHangFrame() {
         initComponents();
+<<<<<<< Updated upstream
         getContentPane().setBackground(new Color(245,245,245)); 
+=======
+>>>>>>> Stashed changes
         ImageIcon ig=new ImageIcon(getClass().getResource("/Img_Icon/iconfram.png"));
         setIconImage(ig.getImage());
         setTitle("Bán Hàng");
         dongho();
+<<<<<<< Updated upstream
         fropensanpham1.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         fropensanpham2.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+=======
+>>>>>>> Stashed changes
     }
     public void dongho() {
         Thread a = new Thread(new Runnable() {
@@ -119,6 +125,7 @@ public class A_BanHangFrame extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         lblTraKhach = new javax.swing.JLabel();
         txtTienKhach = new javax.swing.JTextField();
+<<<<<<< Updated upstream
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -159,6 +166,8 @@ public class A_BanHangFrame extends javax.swing.JFrame {
             fropensanpham2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 300, Short.MAX_VALUE)
         );
+=======
+>>>>>>> Stashed changes
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -343,7 +352,11 @@ public class A_BanHangFrame extends javax.swing.JFrame {
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addComponent(txtDonGia, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(2, 2, 2)))))
+<<<<<<< Updated upstream
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, 34, Short.MAX_VALUE)
+>>>>>>> Stashed changes
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -404,7 +417,11 @@ public class A_BanHangFrame extends javax.swing.JFrame {
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Background/.jpg"))); // NOI18N
         jLabel10.setText("jLabel10");
+<<<<<<< Updated upstream
         jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -320, 230, 1990));
+=======
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -320, 260, 1990));
+>>>>>>> Stashed changes
 
         lblNewHD.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         lblNewHD.setText("Hóa đơn mới");
@@ -467,6 +484,7 @@ public class A_BanHangFrame extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
+<<<<<<< Updated upstream
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(btnReturn)
@@ -475,6 +493,12 @@ public class A_BanHangFrame extends javax.swing.JFrame {
                             .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
+=======
+                        .addComponent(btnReturn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel1))
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+>>>>>>> Stashed changes
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -483,6 +507,7 @@ public class A_BanHangFrame extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
+<<<<<<< Updated upstream
                         .addComponent(btnReturn)
                         .addGap(156, 156, 156)
                         .addComponent(jLabel5))
@@ -490,6 +515,15 @@ public class A_BanHangFrame extends javax.swing.JFrame {
                         .addGap(5, 5, 5)
                         .addComponent(jLabel1)
                         .addGap(18, 18, 18)
+=======
+                        .addComponent(btnReturn)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(108, 108, 108)
+                        .addComponent(jLabel5))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+>>>>>>> Stashed changes
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -514,7 +548,11 @@ public class A_BanHangFrame extends javax.swing.JFrame {
                             .addComponent(lblThanhToanHD)
                             .addComponent(lblInHD)))
                     .addGroup(layout.createSequentialGroup()
+<<<<<<< Updated upstream
                         .addGap(20, 20, 20)
+=======
+                        .addGap(32, 32, 32)
+>>>>>>> Stashed changes
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -534,9 +572,12 @@ public class A_BanHangFrame extends javax.swing.JFrame {
 
     private void lblOpenSPMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblOpenSPMouseClicked
         // TODO add your handling code here:
+<<<<<<< Updated upstream
         fropensanpham2.setLocationRelativeTo(null);
         fropensanpham2.setSize(400, 400);
         fropensanpham2.setVisible(true);
+=======
+>>>>>>> Stashed changes
     }//GEN-LAST:event_lblOpenSPMouseClicked
 
     private void lblAddBHMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAddBHMouseClicked
@@ -544,10 +585,14 @@ public class A_BanHangFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_lblAddBHMouseClicked
 
     private void lblOpenKHMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblOpenKHMouseClicked
+<<<<<<< Updated upstream
 //       new tableKhachHang().setVisible(true);
         fropensanpham1.setLocationRelativeTo(null);
         fropensanpham1.setSize(400, 400);
         fropensanpham1.setVisible(true);
+=======
+      new  tableKhachHang().setVisible(true);
+>>>>>>> Stashed changes
     }//GEN-LAST:event_lblOpenKHMouseClicked
 
     private void txtMaKhachHangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMaKhachHangActionPerformed
@@ -620,7 +665,10 @@ public class A_BanHangFrame extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
+<<<<<<< Updated upstream
     private javax.swing.JTable jTable1;
+=======
+>>>>>>> Stashed changes
     private javax.swing.JLabel lblAddBH;
     private javax.swing.JLabel lblDate;
     private javax.swing.JLabel lblHoTenNV;

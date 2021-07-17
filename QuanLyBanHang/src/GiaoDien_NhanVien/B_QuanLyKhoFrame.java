@@ -27,9 +27,13 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
     public B_QuanLyKhoFrame() {
         initComponents();
         ImageIcon ig=new ImageIcon(getClass().getResource("/Img_Icon/iconfram.png"));
+<<<<<<< Updated upstream
         Tabbed.setBackground(new Color(245,245,245));
         setIconImage(ig.getImage());
         getContentPane().setBackground(new Color(245,245,245));
+=======
+        setIconImage(ig.getImage());
+>>>>>>> Stashed changes
         setTitle("Quản Lý Kho");
     }
 
@@ -61,11 +65,16 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
         pnltructhuoc2 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+<<<<<<< Updated upstream
         cboBaoHanhDT = new javax.swing.JComboBox<String>();
+=======
+        cboBaoHanhDT = new javax.swing.JComboBox<>();
+>>>>>>> Stashed changes
         txtSoLuongTonDT = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
+<<<<<<< Updated upstream
         cboHDH = new javax.swing.JComboBox<String>();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
@@ -75,6 +84,17 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
         jLabel18 = new javax.swing.JLabel();
         cboMangDT = new javax.swing.JComboBox<String>();
         cboSacDT = new javax.swing.JComboBox<String>();
+=======
+        cboHDH = new javax.swing.JComboBox<>();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        cboSimDT = new javax.swing.JComboBox<>();
+        cboRamDT = new javax.swing.JComboBox<>();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel18 = new javax.swing.JLabel();
+        cboMangDT = new javax.swing.JComboBox<>();
+        cboSacDT = new javax.swing.JComboBox<>();
+>>>>>>> Stashed changes
         jLabel15 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -147,8 +167,11 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
 
         Tabbed.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 
+<<<<<<< Updated upstream
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
+=======
+>>>>>>> Stashed changes
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         txtMaDT.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -174,7 +197,11 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblId)
                     .addComponent(lblName))
+<<<<<<< Updated upstream
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
+>>>>>>> Stashed changes
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtTenDT, javax.swing.GroupLayout.PREFERRED_SIZE, 341, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtMaDT, javax.swing.GroupLayout.PREFERRED_SIZE, 341, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -183,6 +210,7 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
+<<<<<<< Updated upstream
                 .addGap(6, 6, 6)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblId)
@@ -192,6 +220,17 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
                     .addComponent(lblName, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(txtTenDT, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
+=======
+                .addContainerGap()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblId)
+                    .addComponent(txtMaDT, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblName, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(txtTenDT, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, 0))
+>>>>>>> Stashed changes
         );
 
         jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
@@ -259,10 +298,17 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
                     .addComponent(jLabel5)
                     .addComponent(jLabel4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+<<<<<<< Updated upstream
                 .addGroup(pnltructhuocLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(txtUserName, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE)
                     .addComponent(txtPassword))
                 .addContainerGap(25, Short.MAX_VALUE))
+=======
+                .addGroup(pnltructhuocLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtUserName, javax.swing.GroupLayout.DEFAULT_SIZE, 218, Short.MAX_VALUE)
+                    .addComponent(txtPassword))
+                .addContainerGap())
+>>>>>>> Stashed changes
         );
         pnltructhuocLayout.setVerticalGroup(
             pnltructhuocLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -287,7 +333,11 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel9.setText("Bảo Hành");
 
+<<<<<<< Updated upstream
         cboBaoHanhDT.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1 năm", "2 năm" }));
+=======
+        cboBaoHanhDT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1 năm", "2 năm" }));
+>>>>>>> Stashed changes
 
         javax.swing.GroupLayout pnltructhuoc2Layout = new javax.swing.GroupLayout(pnltructhuoc2);
         pnltructhuoc2.setLayout(pnltructhuoc2Layout);
@@ -327,7 +377,11 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel10.setText("Hệ điều hành:");
 
+<<<<<<< Updated upstream
         cboHDH.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Android", "IOS" }));
+=======
+        cboHDH.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Android", "IOS" }));
+>>>>>>> Stashed changes
         cboHDH.setMaximumSize(null);
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -336,10 +390,17 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
         jLabel14.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel14.setText("Sim");
 
+<<<<<<< Updated upstream
         cboSimDT.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1 Sim", "2 Sim" }));
         cboSimDT.setMaximumSize(null);
 
         cboRamDT.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2GB", "3GB", "4GB", " " }));
+=======
+        cboSimDT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1 Sim", "2 Sim" }));
+        cboSimDT.setMaximumSize(null);
+
+        cboRamDT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2GB", "3GB", "4GB", " " }));
+>>>>>>> Stashed changes
         cboRamDT.setMaximumSize(null);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -382,10 +443,17 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
         jLabel18.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel18.setText("Mạng di động:  ");
 
+<<<<<<< Updated upstream
         cboMangDT.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "4G", "5G" }));
         cboMangDT.setMaximumSize(null);
 
         cboSacDT.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Hỗ trợ sạc nhanh", "Không hỗ trợ" }));
+=======
+        cboMangDT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "4G", "5G" }));
+        cboMangDT.setMaximumSize(null);
+
+        cboSacDT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hỗ trợ sạc nhanh", "Không hỗ trợ" }));
+>>>>>>> Stashed changes
         cboSacDT.setMaximumSize(null);
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -434,6 +502,7 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< Updated upstream
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -447,6 +516,21 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
                         .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 7, Short.MAX_VALUE)))
                 .addContainerGap())
+=======
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel17)
+                        .addGap(30, 30, 30)
+                        .addComponent(jScrollPane1))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(31, 31, 31))
+>>>>>>> Stashed changes
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -462,7 +546,11 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+<<<<<<< Updated upstream
                 .addContainerGap(15, Short.MAX_VALUE))
+=======
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+>>>>>>> Stashed changes
         );
 
         tblDienThoai.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -582,16 +670,26 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
+<<<<<<< Updated upstream
+=======
+                                .addContainerGap()
+                                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+>>>>>>> Stashed changes
                                 .addGap(21, 21, 21)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(pnltructhuoc2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
+<<<<<<< Updated upstream
                                         .addComponent(pnltructhuoc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addContainerGap()
                                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+=======
+                                        .addComponent(pnltructhuoc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+>>>>>>> Stashed changes
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(67, 67, 67)
@@ -611,7 +709,11 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(btnLastDT))
                             .addGroup(jPanel1Layout.createSequentialGroup()
+<<<<<<< Updated upstream
                                 .addGap(12, 12, 12)
+=======
+                                .addGap(29, 29, 29)
+>>>>>>> Stashed changes
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 773, javax.swing.GroupLayout.PREFERRED_SIZE)))))
@@ -626,12 +728,17 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
                         .addComponent(btnDeleteDT)
                         .addGap(18, 18, 18)
                         .addComponent(btnExitDT)))
+<<<<<<< Updated upstream
                 .addContainerGap(35, Short.MAX_VALUE))
+=======
+                .addContainerGap(68, Short.MAX_VALUE))
+>>>>>>> Stashed changes
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(31, 31, 31)
+<<<<<<< Updated upstream
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -644,6 +751,21 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
                             .addComponent(pnltructhuoc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+=======
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane2)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(pnltructhuoc2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(pnltructhuoc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+>>>>>>> Stashed changes
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -861,16 +983,27 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(txtChooseFile1)
                     .addComponent(btnXoaAnh1, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+<<<<<<< Updated upstream
                 .addGap(0, 48, Short.MAX_VALUE))
+=======
+                .addGap(0, 422, Short.MAX_VALUE))
+>>>>>>> Stashed changes
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel10Layout.createSequentialGroup()
+<<<<<<< Updated upstream
                 .addGap(21, 21, 21)
                 .addComponent(txtChooseFile1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                 .addComponent(btnXoaAnh1)
                 .addContainerGap())
+=======
+                .addContainerGap()
+                .addComponent(txtChooseFile1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnXoaAnh1))
+>>>>>>> Stashed changes
             .addComponent(lblAnhDaiDien1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -949,7 +1082,11 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
                         .addGroup(jpnNSXLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+<<<<<<< Updated upstream
                         .addGap(15, 15, 15)
+=======
+                        .addGap(29, 29, 29)
+>>>>>>> Stashed changes
                         .addGroup(jpnNSXLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 773, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -980,20 +1117,34 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
                         .addComponent(btnNextNSX)
                         .addGap(18, 18, 18)
                         .addComponent(btnLastNSX)))
+<<<<<<< Updated upstream
                 .addContainerGap(58, Short.MAX_VALUE))
+=======
+                .addContainerGap(94, Short.MAX_VALUE))
+>>>>>>> Stashed changes
             .addGroup(jpnNSXLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jpnNSXLayout.createSequentialGroup()
                     .addGap(765, 765, 765)
                     .addComponent(jLabel26)
+<<<<<<< Updated upstream
                     .addContainerGap(680, Short.MAX_VALUE)))
+=======
+                    .addContainerGap(730, Short.MAX_VALUE)))
+>>>>>>> Stashed changes
         );
         jpnNSXLayout.setVerticalGroup(
             jpnNSXLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpnNSXLayout.createSequentialGroup()
                 .addGap(12, 12, 12)
+<<<<<<< Updated upstream
                 .addGroup(jpnNSXLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+=======
+                .addGroup(jpnNSXLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+>>>>>>> Stashed changes
                 .addGroup(jpnNSXLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jpnNSXLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1026,15 +1177,22 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
 
         Tabbed.addTab("Cập nhật nhà sản xuất", jpnNSX);
 
+<<<<<<< Updated upstream
         getContentPane().add(Tabbed, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 1510, 760));
+=======
+        getContentPane().add(Tabbed, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 1560, 760));
+>>>>>>> Stashed changes
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 51, 255));
         jLabel1.setText("Quản lý Kho");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 0, 381, 65));
 
+<<<<<<< Updated upstream
         panelThem.setBackground(new java.awt.Color(102, 102, 255));
 
+=======
+>>>>>>> Stashed changes
         lblAnhAccount.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Icon/account_120px.png"))); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
@@ -1128,7 +1286,11 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
                                 .addGap(32, 32, 32)))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelThemLayout.createSequentialGroup()
+<<<<<<< Updated upstream
                         .addGap(0, 37, Short.MAX_VALUE)
+=======
+                        .addGap(0, 12, Short.MAX_VALUE)
+>>>>>>> Stashed changes
                         .addComponent(lblAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
             .addGroup(panelThemLayout.createSequentialGroup()
@@ -1163,7 +1325,11 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
                 .addGap(22, 22, 22))
         );
 
+<<<<<<< Updated upstream
         getContentPane().add(panelThem, new org.netbeans.lib.awtextra.AbsoluteConstraints(1510, 0, 270, -1));
+=======
+        getContentPane().add(panelThem, new org.netbeans.lib.awtextra.AbsoluteConstraints(1555, 0, -1, -1));
+>>>>>>> Stashed changes
 
         btnReturn.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         btnReturn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Icon/return_30px.png"))); // NOI18N
@@ -1220,6 +1386,7 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDangxuatActionPerformed
 
     private void btnFullTableMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFullTableMouseEntered
+<<<<<<< Updated upstream
 //        btnFullTable.setBackground(new Color(0, 51, 255));
 //        btnFullTable.setForeground(Color.white);
     }//GEN-LAST:event_btnFullTableMouseEntered
@@ -1227,6 +1394,15 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
     private void btnFullTableMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFullTableMouseExited
 //        btnFullTable.setBackground(new Color(240, 240, 240));
 //        btnFullTable.setForeground(new Color(0, 0, 255));// TODO add your handling code here:
+=======
+        btnFullTable.setBackground(new Color(0, 51, 255));
+        btnFullTable.setForeground(Color.white);
+    }//GEN-LAST:event_btnFullTableMouseEntered
+
+    private void btnFullTableMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFullTableMouseExited
+        btnFullTable.setBackground(new Color(240, 240, 240));
+        btnFullTable.setForeground(new Color(0, 0, 255));// TODO add your handling code here:
+>>>>>>> Stashed changes
     }//GEN-LAST:event_btnFullTableMouseExited
 
     private void btnFullTableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFullTableActionPerformed
@@ -1246,8 +1422,13 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_txtTimKiemKeyTyped
 
     private void btnExitDTMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExitDTMouseEntered
+<<<<<<< Updated upstream
 //        btnExitDT.setBackground(new Color(255, 0, 153));
 //        btnExitDT.setForeground(Color.white);
+=======
+        btnExitDT.setBackground(new Color(255, 0, 153));
+        btnExitDT.setForeground(Color.white);
+>>>>>>> Stashed changes
     }//GEN-LAST:event_btnExitDTMouseEntered
 
     private void btnExitDTMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExitDTMouseExited
@@ -1261,6 +1442,7 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_btnUpdateDTMouseEntered
 
     private void btnUpdateDTMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUpdateDTMouseExited
+<<<<<<< Updated upstream
 //        btnUpdateDT.setBackground(new Color(240, 240, 240));
 //        btnUpdateDT.setForeground(Color.black);
     }//GEN-LAST:event_btnUpdateDTMouseExited
@@ -1332,6 +1514,79 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
     private void btnExitNSXMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExitNSXMouseExited
 //        btnExitNSX.setBackground(new Color(240, 240, 240));
 //        btnExitNSX.setForeground(Color.black); // TODO add your handling code here:
+=======
+        btnUpdateDT.setBackground(new Color(240, 240, 240));
+        btnUpdateDT.setForeground(Color.black);
+    }//GEN-LAST:event_btnUpdateDTMouseExited
+
+    private void btnNewDTMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNewDTMouseEntered
+        btnNewDT.setBackground(new Color(255, 0, 153));
+        btnNewDT.setForeground(Color.white);        // TODO add your handling code here:
+    }//GEN-LAST:event_btnNewDTMouseEntered
+
+    private void btnNewDTMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNewDTMouseExited
+        btnNewDT.setBackground(new Color(240, 240, 240));
+        btnNewDT.setForeground(Color.black);      // TODO add your handling code here:
+    }//GEN-LAST:event_btnNewDTMouseExited
+
+    private void btnDeleteDTMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteDTMouseEntered
+        btnDeleteDT.setBackground(new Color(255, 0, 153));
+        btnDeleteDT.setForeground(Color.white);    // TODO add your handling code here:
+    }//GEN-LAST:event_btnDeleteDTMouseEntered
+
+    private void btnDeleteDTMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteDTMouseExited
+        btnDeleteDT.setBackground(new Color(240, 240, 240));
+        btnDeleteDT.setForeground(Color.black); // TODO add your handling code here:
+    }//GEN-LAST:event_btnDeleteDTMouseExited
+
+    private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
+        new GiaoDienChinhNhanVienFrame("Hello").setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnReturnActionPerformed
+
+    private void btnNSXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNSXActionPerformed
+        Tabbed.setSelectedIndex(1);
+    }//GEN-LAST:event_btnNSXActionPerformed
+
+    private void btnNewNSXMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNewNSXMouseEntered
+         btnNewNSX.setBackground(new Color(255, 0, 153));
+         btnNewNSX.setForeground(Color.white);          // TODO add your handling code here:
+    }//GEN-LAST:event_btnNewNSXMouseEntered
+
+    private void btnNewNSXMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNewNSXMouseExited
+        btnNewNSX.setBackground(new Color(240, 240, 240));
+        btnNewNSX.setForeground(Color.black); // TODO add your handling code here:
+    }//GEN-LAST:event_btnNewNSXMouseExited
+
+    private void btnAddNSXMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddNSXMouseEntered
+        btnAddNSX.setBackground(new Color(255, 0, 153));
+        btnAddNSX.setForeground(Color.white);          // TODO add your handling code here:
+    }//GEN-LAST:event_btnAddNSXMouseEntered
+
+    private void btnAddNSXMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddNSXMouseExited
+        btnAddNSX.setBackground(new Color(240, 240, 240));
+        btnAddNSX.setForeground(Color.black); // TODO add your handling code here:
+    }//GEN-LAST:event_btnAddNSXMouseExited
+
+    private void btnDeleteNSXMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteNSXMouseEntered
+        btnDeleteNSX.setBackground(new Color(255, 0, 153));
+        btnDeleteNSX.setForeground(Color.white);          // TODO add your handling code here:
+    }//GEN-LAST:event_btnDeleteNSXMouseEntered
+
+    private void btnDeleteNSXMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteNSXMouseExited
+        btnDeleteNSX.setBackground(new Color(240, 240, 240));
+        btnDeleteNSX.setForeground(Color.black); // TODO add your handling code here:
+    }//GEN-LAST:event_btnDeleteNSXMouseExited
+
+    private void btnExitNSXMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExitNSXMouseEntered
+        btnExitNSX.setBackground(new Color(255, 0, 153));
+        btnExitNSX.setForeground(Color.white);          // TODO add your handling code here:
+    }//GEN-LAST:event_btnExitNSXMouseEntered
+
+    private void btnExitNSXMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExitNSXMouseExited
+        btnExitNSX.setBackground(new Color(240, 240, 240));
+        btnExitNSX.setForeground(Color.black); // TODO add your handling code here:
+>>>>>>> Stashed changes
     }//GEN-LAST:event_btnExitNSXMouseExited
 
     private void btnXoaAnh1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnXoaAnh1ActionPerformed
