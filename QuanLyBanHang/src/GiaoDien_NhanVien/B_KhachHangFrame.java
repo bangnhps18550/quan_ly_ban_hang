@@ -5,10 +5,10 @@
  */
 package GiaoDien_NhanVien;
 
-import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.Label;
+import java.awt.Color;
 import javafx.scene.AccessibleAttribute;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
@@ -497,8 +497,7 @@ public class B_KhachHangFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_btnNewMouseExited
 
     private void btnNewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNewActionPerformed
-        resetFill();
-        setWhile();// TODO add your handling code here:
+        
     }//GEN-LAST:event_btnNewActionPerformed
 
     private void btnAddMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddMouseEntered
