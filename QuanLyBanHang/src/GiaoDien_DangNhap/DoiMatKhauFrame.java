@@ -33,11 +33,12 @@ public class DoiMatKhauFrame extends javax.swing.JFrame {
         this.setLocation(dim.width / 2 - this.getSize().width / 2, dim.height / 2 - this.getSize().height / 2);
         this.setBackground(new Color(255, 255, 255, 0));
         txtUserName.setBackground(new Color(255, 255, 255, 0));
-        inpPassword.setBackground(new Color(255, 255, 255, 0));
-        inpComfirm.setBackground(new Color(255, 255, 255, 0));
-        chkAgree.setBackground(new Color(255, 255, 255, 0));
+        txtPassword.setBackground(new Color(255, 255, 255, 0));
+        txtNewPass.setBackground(new Color(255, 255, 255, 0));
+        txtComfirm.setBackground(new Color(255, 255, 255, 0));
+
         txtUserName.setText("");
-        inpPassword.setText("");
+        txtPassword.setText("");
         this.addMouseListener(new MouseAdapter() {
             public void mousePressed(MouseEvent e) {
                 posX = e.getX();
@@ -69,15 +70,18 @@ public class DoiMatKhauFrame extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
+        lblLoi = new javax.swing.JLabel();
         txtUserName = new javax.swing.JTextField();
-        inpPassword = new javax.swing.JPasswordField();
-        chkAgree = new javax.swing.JCheckBox();
+        txtPassword = new javax.swing.JPasswordField();
+        jLabel12 = new javax.swing.JLabel();
+        txtComfirm = new javax.swing.JPasswordField();
+        jSeparator4 = new javax.swing.JSeparator();
         lblCancel = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         btnLogin = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        inpComfirm = new javax.swing.JPasswordField();
+        txtNewPass = new javax.swing.JPasswordField();
         jSeparator3 = new javax.swing.JSeparator();
         rightPanel = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -91,35 +95,47 @@ public class DoiMatKhauFrame extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Password");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 290, 150, 30));
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 250, 150, 30));
 
         jLabel8.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Username");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 190, 150, 30));
-        getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 370, 320, 20));
-        getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 270, 320, 20));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 160, 150, 30));
+        getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 320, 320, 20));
+        getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 240, 320, 20));
+
+        lblLoi.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        lblLoi.setForeground(new java.awt.Color(238, 118, 118));
+        lblLoi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Icon/warning.png"))); // NOI18N
+        lblLoi.setText("Các ô không được để trống");
+        getContentPane().add(lblLoi, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 500, 320, -1));
 
         txtUserName.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
         txtUserName.setForeground(new java.awt.Color(255, 255, 255));
         txtUserName.setBorder(null);
-        getContentPane().add(txtUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 220, 320, 50));
+        getContentPane().add(txtUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 200, 320, 40));
 
-        inpPassword.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
-        inpPassword.setForeground(new java.awt.Color(255, 255, 255));
-        inpPassword.setText("jPasswordField1");
-        inpPassword.setBorder(null);
-        getContentPane().add(inpPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 320, 320, 50));
+        txtPassword.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        txtPassword.setForeground(new java.awt.Color(255, 255, 255));
+        txtPassword.setText("jPasswordField1");
+        txtPassword.setBorder(null);
+        getContentPane().add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 280, 320, 40));
 
-        chkAgree.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
-        chkAgree.setForeground(new java.awt.Color(255, 255, 255));
-        chkAgree.setText("Remenber ");
-        chkAgree.addActionListener(new java.awt.event.ActionListener() {
+        jLabel12.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("Comfirm");
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 410, 150, 30));
+
+        txtComfirm.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        txtComfirm.setForeground(new java.awt.Color(255, 255, 255));
+        txtComfirm.setBorder(null);
+        txtComfirm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                chkAgreeActionPerformed(evt);
+                txtComfirmActionPerformed(evt);
             }
         });
-        getContentPane().add(chkAgree, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 500, 310, -1));
+        getContentPane().add(txtComfirm, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 440, 320, 40));
+        getContentPane().add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 480, 320, 20));
 
         lblCancel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         lblCancel.setForeground(new java.awt.Color(255, 255, 255));
@@ -139,7 +155,7 @@ public class DoiMatKhauFrame extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Change Password");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 100, 340, 60));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 90, 340, 60));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -151,12 +167,12 @@ public class DoiMatKhauFrame extends javax.swing.JFrame {
                 jLabel3MouseClicked(evt);
             }
         });
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 40, 170, 40));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 30, 170, 40));
 
         btnLogin.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         btnLogin.setForeground(new java.awt.Color(255, 255, 255));
         btnLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_GiaoDienChinh/nut.png"))); // NOI18N
-        btnLogin.setText("Login");
+        btnLogin.setText("Change");
         btnLogin.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnLogin.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -167,19 +183,19 @@ public class DoiMatKhauFrame extends javax.swing.JFrame {
 
         jLabel11.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("Comfirm");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 390, 150, 30));
+        jLabel11.setText("New Password");
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 330, 150, 30));
 
-        inpComfirm.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
-        inpComfirm.setForeground(new java.awt.Color(255, 255, 255));
-        inpComfirm.setBorder(null);
-        inpComfirm.addActionListener(new java.awt.event.ActionListener() {
+        txtNewPass.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        txtNewPass.setForeground(new java.awt.Color(255, 255, 255));
+        txtNewPass.setBorder(null);
+        txtNewPass.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                inpComfirmActionPerformed(evt);
+                txtNewPassActionPerformed(evt);
             }
         });
-        getContentPane().add(inpComfirm, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 420, 320, 50));
-        getContentPane().add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 470, 320, 20));
+        getContentPane().add(txtNewPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 360, 320, 40));
+        getContentPane().add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 400, 320, 20));
 
         rightPanel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         rightPanel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_GiaoDienChinh/right_panel.png"))); // NOI18N
@@ -197,11 +213,6 @@ public class DoiMatKhauFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void chkAgreeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkAgreeActionPerformed
-  
-// TODO add your handling code here:
-    }//GEN-LAST:event_chkAgreeActionPerformed
-
     private void lblCancelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblCancelMouseClicked
         System.exit(0);
     }//GEN-LAST:event_lblCancelMouseClicked
@@ -210,9 +221,9 @@ public class DoiMatKhauFrame extends javax.swing.JFrame {
        
     }//GEN-LAST:event_btnLoginMouseClicked
 
-    private void inpComfirmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inpComfirmActionPerformed
+    private void txtNewPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNewPassActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_inpComfirmActionPerformed
+    }//GEN-LAST:event_txtNewPassActionPerformed
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
 
@@ -221,6 +232,10 @@ public class DoiMatKhauFrame extends javax.swing.JFrame {
             dispose();// TODO add your handling code here:
 
     }//GEN-LAST:event_jLabel3MouseClicked
+
+    private void txtComfirmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtComfirmActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtComfirmActionPerformed
 
     /**
      * @param args the command line arguments
@@ -261,21 +276,24 @@ public class DoiMatKhauFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel btnLogin;
-    private javax.swing.JCheckBox chkAgree;
-    private javax.swing.JPasswordField inpComfirm;
-    private javax.swing.JPasswordField inpPassword;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator4;
     private javax.swing.JLabel lblCancel;
+    private javax.swing.JLabel lblLoi;
     private javax.swing.JLabel leftPanel;
     private javax.swing.JLabel rightPanel;
+    private javax.swing.JPasswordField txtComfirm;
+    private javax.swing.JPasswordField txtNewPass;
+    private javax.swing.JPasswordField txtPassword;
     private javax.swing.JTextField txtUserName;
     // End of variables declaration//GEN-END:variables
 }

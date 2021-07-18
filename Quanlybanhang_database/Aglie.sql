@@ -20,8 +20,14 @@ manhanvien_username varchar(15) primary key,
 tennhanvien nvarchar(50) not null,
 ngayvaolam date, 
 role nvarchar(30) not null,
-password nvarchar(30)
---luong money
+password nvarchar(30) not null,
+gioitinh bit,
+dienthoai nvarchar(15) not null,
+ngaysinh date,
+luong money not null,
+socmnd nvarchar(15) not null,
+diachi nvarchar(200),
+anhdaidien nvarchar(30)
 )
 
 create table KhachHang(
@@ -52,7 +58,6 @@ foreign key(masanpham) references sanpham(masanpham)
 drop table HoaDonChiTiet
 drop table hoadon
 drop table nhanvien
-drop table users
 drop table NhaSanXuat
 drop table SanPham
 drop table KhachHang
