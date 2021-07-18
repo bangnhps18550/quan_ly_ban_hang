@@ -61,11 +61,16 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
         pnltructhuoc2 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+<<<<<<< HEAD
         cboBaoHanhDT = new javax.swing.JComboBox<String>();
+=======
+        cboBaoHanhDT = new javax.swing.JComboBox<>();
+>>>>>>> 33e1b5fa3a9097c4731a22003249dd193f6b9730
         txtSoLuongTonDT = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
+<<<<<<< HEAD
         cboHDH = new javax.swing.JComboBox<String>();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
@@ -75,6 +80,17 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
         jLabel18 = new javax.swing.JLabel();
         cboMangDT = new javax.swing.JComboBox<String>();
         cboSacDT = new javax.swing.JComboBox<String>();
+=======
+        cboHDH = new javax.swing.JComboBox<>();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        cboSimDT = new javax.swing.JComboBox<>();
+        cboRamDT = new javax.swing.JComboBox<>();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel18 = new javax.swing.JLabel();
+        cboMangDT = new javax.swing.JComboBox<>();
+        cboSacDT = new javax.swing.JComboBox<>();
+>>>>>>> 33e1b5fa3a9097c4731a22003249dd193f6b9730
         jLabel15 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -147,8 +163,11 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
 
         Tabbed.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 
+<<<<<<< HEAD
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
+=======
+>>>>>>> 33e1b5fa3a9097c4731a22003249dd193f6b9730
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         txtMaDT.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -287,7 +306,11 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel9.setText("Bảo Hành");
 
+<<<<<<< HEAD
         cboBaoHanhDT.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1 năm", "2 năm" }));
+=======
+        cboBaoHanhDT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1 năm", "2 năm" }));
+>>>>>>> 33e1b5fa3a9097c4731a22003249dd193f6b9730
 
         javax.swing.GroupLayout pnltructhuoc2Layout = new javax.swing.GroupLayout(pnltructhuoc2);
         pnltructhuoc2.setLayout(pnltructhuoc2Layout);
@@ -327,7 +350,11 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel10.setText("Hệ điều hành:");
 
+<<<<<<< HEAD
         cboHDH.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Android", "IOS" }));
+=======
+        cboHDH.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Android", "IOS" }));
+>>>>>>> 33e1b5fa3a9097c4731a22003249dd193f6b9730
         cboHDH.setMaximumSize(null);
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -336,10 +363,17 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
         jLabel14.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel14.setText("Sim");
 
+<<<<<<< HEAD
         cboSimDT.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1 Sim", "2 Sim" }));
         cboSimDT.setMaximumSize(null);
 
         cboRamDT.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2GB", "3GB", "4GB", " " }));
+=======
+        cboSimDT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1 Sim", "2 Sim" }));
+        cboSimDT.setMaximumSize(null);
+
+        cboRamDT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2GB", "3GB", "4GB", " " }));
+>>>>>>> 33e1b5fa3a9097c4731a22003249dd193f6b9730
         cboRamDT.setMaximumSize(null);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -382,10 +416,17 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
         jLabel18.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel18.setText("Mạng di động:  ");
 
+<<<<<<< HEAD
         cboMangDT.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "4G", "5G" }));
         cboMangDT.setMaximumSize(null);
 
         cboSacDT.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Hỗ trợ sạc nhanh", "Không hỗ trợ" }));
+=======
+        cboMangDT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "4G", "5G" }));
+        cboMangDT.setMaximumSize(null);
+
+        cboSacDT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hỗ trợ sạc nhanh", "Không hỗ trợ" }));
+>>>>>>> 33e1b5fa3a9097c4731a22003249dd193f6b9730
         cboSacDT.setMaximumSize(null);
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -462,7 +503,11 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+<<<<<<< HEAD
                 .addContainerGap(15, Short.MAX_VALUE))
+=======
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+>>>>>>> 33e1b5fa3a9097c4731a22003249dd193f6b9730
         );
 
         tblDienThoai.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -643,7 +688,11 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
                             .addComponent(pnltructhuoc2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(pnltructhuoc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+<<<<<<< HEAD
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+=======
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)))
+>>>>>>> 33e1b5fa3a9097c4731a22003249dd193f6b9730
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
