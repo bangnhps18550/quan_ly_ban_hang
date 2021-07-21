@@ -6,9 +6,15 @@
  /*test cai demo*/
 package GiaoDien_NhanVien;
 
+import com.sun.javafx.geom.AreaOp;
 import java.awt.Color;
+import java.awt.Image;
 import java.io.File;
+import java.io.IOException;
 import static java.lang.Thread.sleep;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -16,18 +22,28 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.Time;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.Vector;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
-
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel; 
+import java.nio.file.StandardCopyOption;
 /**
  *
  * @author Admin
  */
 public class B_QuanLyKhoFrame extends javax.swing.JFrame {
+static final String url="jdbc:sqlserver://localhost;databaseName=quan_ly_ban_hang;user=sa;password=123";
+private String header[]={"Mã nhà sản xuất","Tên nhà sản xuất","Địa chỉ","Số điện thoại","Email","ghi chú","hinh"}; 
+private  DefaultTableModel table_nhasanxuat=new DefaultTableModel(header,0);
+String filenamepic="";
+private ArrayList<B_Nhasanxuat>list=new ArrayList<B_Nhasanxuat>();
+int currentindex=-1; 
 
     /**
      * Creates new form A_QuanLyKhoFrame
@@ -39,6 +55,7 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
         setIconImage(ig.getImage());
         getContentPane().setBackground(new Color(245,245,245));
         setTitle("Quản Lý Kho");
+             loadtotable_nhasanxuat();
     }
 
     /**
@@ -113,7 +130,8 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
         txt_ghichunhasanxuat = new javax.swing.JTextArea();
-        btnDeleteNSX = new javax.swing.JButton();
+        btnFirstNSX = new javax.swing.JButton();
+        btnAddNSX = new javax.swing.JButton();
         btnExitNSX = new javax.swing.JButton();
         jPanel9 = new javax.swing.JPanel();
         lblId2 = new javax.swing.JLabel();
@@ -121,12 +139,11 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
         lblName3 = new javax.swing.JLabel();
         txt_tennhasanxuat = new javax.swing.JTextField();
         jPanel10 = new javax.swing.JPanel();
-        lblAnhDaiDien1 = new javax.swing.JLabel();
+        lbl_anhdaidiennhasanxuat = new javax.swing.JLabel();
         btnXoaAnh1 = new javax.swing.JButton();
         txtChooseFile1 = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         tblNSX = new javax.swing.JTable();
-        btnFirstNSX = new javax.swing.JButton();
         btnPreNSX = new javax.swing.JButton();
         jLabel26 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
@@ -135,9 +152,9 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
         lblLenghNSX = new javax.swing.JLabel();
         btnNextNSX = new javax.swing.JButton();
         btnLastNSX = new javax.swing.JButton();
-        btnUpdateNSX = new javax.swing.JButton();
-        btnAddNSX = new javax.swing.JButton();
         btnNewNSX = new javax.swing.JButton();
+        btnUpdateNSX = new javax.swing.JButton();
+        btnDeleteNSX = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         panelThem = new javax.swing.JPanel();
         lblAnhAccount = new javax.swing.JLabel();
@@ -700,30 +717,61 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
         txt_ghichunhasanxuat.setRows(5);
         jScrollPane4.setViewportView(txt_ghichunhasanxuat);
 
+        btnFirstNSX.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        btnFirstNSX.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Icon/First.png"))); // NOI18N
+        btnFirstNSX.setText("First");
+        btnFirstNSX.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFirstNSXActionPerformed(evt);
+            }
+        });
+
+        btnAddNSX.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        btnAddNSX.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Icon/them.png"))); // NOI18N
+        btnAddNSX.setText("Add");
+        btnAddNSX.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAddNSX.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnAddNSXMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnAddNSXMouseExited(evt);
+            }
+        });
+        btnAddNSX.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddNSXActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(lblName5, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(32, 32, 32)
+                                .addComponent(txt_emailnhasanxuat))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(lblName4, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(32, 32, 32)
+                                .addComponent(txt_diachinhasanxuat, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblName2, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(btnAddNSX)
+                                .addComponent(btnFirstNSX)))
                         .addGap(32, 32, 32)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txt_dienthoainhasanxuat)
-                            .addComponent(jScrollPane4)))
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addComponent(lblName5, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(32, 32, 32)
-                            .addComponent(txt_emailnhasanxuat))
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addComponent(lblName4, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(32, 32, 32)
-                            .addComponent(txt_diachinhasanxuat, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jScrollPane4))))
                 .addGap(100, 100, 100))
         );
         jPanel2Layout.setVerticalGroup(
@@ -743,23 +791,15 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
                     .addComponent(txt_dienthoainhasanxuat, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(35, Short.MAX_VALUE))
+                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnFirstNSX)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnAddNSX)))
+                .addContainerGap(44, Short.MAX_VALUE))
         );
-
-        btnDeleteNSX.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnDeleteNSX.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Icon/xoa.png"))); // NOI18N
-        btnDeleteNSX.setText("Delete");
-        btnDeleteNSX.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnDeleteNSX.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnDeleteNSXMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnDeleteNSXMouseExited(evt);
-            }
-        });
 
         btnExitNSX.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         btnExitNSX.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Icon/exit_30px.png"))); // NOI18N
@@ -816,7 +856,12 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
 
         jPanel10.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
-        lblAnhDaiDien1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        lbl_anhdaidiennhasanxuat.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        lbl_anhdaidiennhasanxuat.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbl_anhdaidiennhasanxuatMouseClicked(evt);
+            }
+        });
 
         btnXoaAnh1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnXoaAnh1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Icon/delete1_30px.png"))); // NOI18N
@@ -830,6 +875,11 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
         txtChooseFile1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         txtChooseFile1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Icon/mo_hinh.png"))); // NOI18N
         txtChooseFile1.setText("Chọn ảnh");
+        txtChooseFile1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtChooseFile1MouseClicked(evt);
+            }
+        });
         txtChooseFile1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtChooseFile1ActionPerformed(evt);
@@ -841,7 +891,7 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel10Layout.createSequentialGroup()
-                .addComponent(lblAnhDaiDien1, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lbl_anhdaidiennhasanxuat, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(45, 45, 45)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(txtChooseFile1)
@@ -856,7 +906,7 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                 .addComponent(btnXoaAnh1)
                 .addContainerGap())
-            .addComponent(lblAnhDaiDien1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lbl_anhdaidiennhasanxuat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         tblNSX.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -876,10 +926,6 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
             }
         });
         jScrollPane3.setViewportView(tblNSX);
-
-        btnFirstNSX.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnFirstNSX.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Icon/First.png"))); // NOI18N
-        btnFirstNSX.setText("First");
 
         btnPreNSX.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         btnPreNSX.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Icon/lui.png"))); // NOI18N
@@ -910,6 +956,19 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
         btnLastNSX.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Icon/den_cuoi.png"))); // NOI18N
         btnLastNSX.setText("Last");
 
+        btnNewNSX.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        btnNewNSX.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Icon/don_dep.png"))); // NOI18N
+        btnNewNSX.setText("  New");
+        btnNewNSX.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnNewNSX.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnNewNSXMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnNewNSXMouseExited(evt);
+            }
+        });
+
         btnUpdateNSX.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         btnUpdateNSX.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Icon/cap_nhat.png"))); // NOI18N
         btnUpdateNSX.setText("Update");
@@ -922,35 +981,27 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
                 btnUpdateNSXMouseExited(evt);
             }
         });
-
-        btnAddNSX.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnAddNSX.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Icon/them.png"))); // NOI18N
-        btnAddNSX.setText("Add");
-        btnAddNSX.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnAddNSX.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAddNSXMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAddNSXMouseExited(evt);
-            }
-        });
-        btnAddNSX.addActionListener(new java.awt.event.ActionListener() {
+        btnUpdateNSX.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddNSXActionPerformed(evt);
+                btnUpdateNSXActionPerformed(evt);
             }
         });
 
-        btnNewNSX.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        btnNewNSX.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Icon/don_dep.png"))); // NOI18N
-        btnNewNSX.setText("  New");
-        btnNewNSX.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnNewNSX.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnDeleteNSX.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        btnDeleteNSX.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Icon/xoa.png"))); // NOI18N
+        btnDeleteNSX.setText("Delete");
+        btnDeleteNSX.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnDeleteNSX.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnNewNSXMouseEntered(evt);
+                btnDeleteNSXMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnNewNSXMouseExited(evt);
+                btnDeleteNSXMouseExited(evt);
+            }
+        });
+        btnDeleteNSX.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDeleteNSXActionPerformed(evt);
             }
         });
 
@@ -970,19 +1021,15 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
                             .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 773, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jpnNSXLayout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addComponent(btnAddNSX)
-                        .addGap(18, 18, 18)
+                        .addGap(33, 33, 33)
                         .addComponent(btnNewNSX)
-                        .addGap(18, 18, 18)
+                        .addGap(132, 132, 132)
                         .addComponent(btnUpdateNSX)
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnDeleteNSX)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnExitNSX)
-                        .addGap(118, 118, 118)
-                        .addComponent(btnFirstNSX)
-                        .addGap(18, 18, 18)
+                        .addGap(239, 239, 239)
                         .addComponent(btnPreNSX)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel28)
@@ -1019,10 +1066,7 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
                         .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 428, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(32, 32, 32)
                 .addGroup(jpnNSXLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnDeleteNSX)
                     .addComponent(btnExitNSX)
-                    .addComponent(btnUpdateNSX)
-                    .addComponent(btnFirstNSX)
                     .addComponent(btnPreNSX)
                     .addComponent(jLabel28)
                     .addComponent(lblIndexNSX)
@@ -1031,8 +1075,9 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
                     .addComponent(btnNextNSX)
                     .addComponent(btnLastNSX)
                     .addComponent(btnNewNSX)
-                    .addComponent(btnAddNSX))
-                .addContainerGap(37, Short.MAX_VALUE))
+                    .addComponent(btnUpdateNSX)
+                    .addComponent(btnDeleteNSX))
+                .addContainerGap(33, Short.MAX_VALUE))
             .addGroup(jpnNSXLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jpnNSXLayout.createSequentialGroup()
                     .addGap(354, 354, 354)
@@ -1356,10 +1401,27 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
 
     private void txtChooseFile1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtChooseFile1ActionPerformed
         // TODO add your handling code here:
+        JFileChooser chooser = new JFileChooser();
+        int result = chooser.showOpenDialog(null);
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File file = chooser.getSelectedFile();
+            String fullpath = file.getAbsolutePath();
+            filenamepic = chooser.getSelectedFile().getName();
+            uphinh(fullpath);
+            try {
+                Path src = Paths.get(fullpath);
+                Path desk = Paths.get("src\\Img_Icon\\" + filenamepic);
+                Files.copy(src, desk, StandardCopyOption.REPLACE_EXISTING);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }//GEN-LAST:event_txtChooseFile1ActionPerformed
 
     private void tblNSXMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblNSXMouseClicked
-        // TODO add your handling code here:
+        // TODO add your handling code here
+       int row=tblNSX.getSelectedRow(); 
+        filldata(row);
     }//GEN-LAST:event_tblNSXMouseClicked
 
     private void btnAddDTMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddDTMouseEntered
@@ -1387,21 +1449,88 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAddDTActionPerformed
 
     private void btnAddNSXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddNSXActionPerformed
-        // TODO add your handling code here:
-//        try (
-//                Connection con = DriverManager.getConnection(connectionUrl); 
-//                PreparedStatementStatement stmt = con.createStatement();) {
-//            String SQL = "SELECT TOP 10 * FROM Person.Contact";
-//            ResultSet rs = stmt.executeQuery(SQL);
-//            while (rs.next()) {
-//                System.out.println(rs.getString("FirstName") + " " + rs.getString("LastName"));
-//            }
-//        }
-//        catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-
+        // TODO add your handling code he
+        try {
+            Connection con = DriverManager.getConnection(url, "sa", "123");
+            String sql = "insert into nhasanxuat(manhasanxuat,tennhasanxuat,diachi,dienthoai,email,motathem,hinh) values(?,?,?,?,?,?,?)";
+            PreparedStatement stm = con.prepareStatement(sql);
+            stm.setString(1, txt_manhasanxuat.getText());
+            stm.setString(2, txt_tennhasanxuat.getText());
+            stm.setString(3, txt_diachinhasanxuat.getText());
+            stm.setString(4, txt_dienthoainhasanxuat.getText());
+            stm.setString(5, txt_emailnhasanxuat.getText());
+            stm.setString(6, txt_ghichunhasanxuat.getText());
+            stm.setString(7, filenamepic);
+            stm.execute();
+//            stm.close();
+//            con.close();
+           loadtotable_nhasanxuat();
+            reset();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }//GEN-LAST:event_btnAddNSXActionPerformed
+
+    private void btnUpdateNSXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateNSXActionPerformed
+        // TODO add your handling code here:
+        try {
+            Connection con = DriverManager.getConnection(url, "sa", "123");
+            String sql = "update nhasanxuat set tennhasanxuat=?,diachi=?,dienthoai=?,email=?,motathem=?,hinh=?";
+            PreparedStatement stm = con.prepareStatement(sql);
+//            stm.setString(1, txt_manhasanxuat.getText().trim());
+            stm.setString(1, txt_tennhasanxuat.getText().trim());
+            stm.setString(2, txt_diachinhasanxuat.getText().trim());
+            stm.setString(3, txt_dienthoainhasanxuat.getText().trim());
+            stm.setString(4, txt_emailnhasanxuat.getText().trim());
+            stm.setString(5, txt_ghichunhasanxuat.getText().trim());
+            stm.setString(6,filenamepic.trim());
+            stm.execute();
+            stm.close();
+            con.close();
+           loadtotable_nhasanxuat();
+//            filldata(0);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_btnUpdateNSXActionPerformed
+
+    private void btnDeleteNSXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteNSXActionPerformed
+        // TODO add your handling code here:
+        try {
+            Connection con = DriverManager.getConnection(url, "sa", "123");
+            String sql = "delete from nhasanxuat where manhasanxuat=?";
+            PreparedStatement ps = null;
+            ps = con.prepareStatement(sql);
+            ps.setString(1, txt_manhasanxuat.getText().trim());
+            ps.executeUpdate();
+            JOptionPane.showMessageDialog(this, "xóa thành công");
+             ps.close();
+             con.close();
+           loadtotable_nhasanxuat();
+             reset();
+              System.out.println("4");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+ 
+    }//GEN-LAST:event_btnDeleteNSXActionPerformed
+
+    private void txtChooseFile1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtChooseFile1MouseClicked
+        // TODO add your handling code here:
+  
+    }//GEN-LAST:event_txtChooseFile1MouseClicked
+
+    private void lbl_anhdaidiennhasanxuatMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_anhdaidiennhasanxuatMouseClicked
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_lbl_anhdaidiennhasanxuatMouseClicked
+
+    private void btnFirstNSXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFirstNSXActionPerformed
+        // TODO add your handling code here:
+        currentindex=0;
+//        showdiem();
+    }//GEN-LAST:event_btnFirstNSXActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1430,7 +1559,6 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
-
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -1438,7 +1566,103 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
             }
         });
     }
+public void loadtotable_nhasanxuat(){
+        Connection conn = null;
+        Statement st = null;
+        ResultSet rs = null;
+        try {
+            conn = DriverManager.getConnection(url);
+            String sql = "select * from nhasanxuat";
+            st = conn.createStatement();
+            rs = st.executeQuery(sql);
+            Vector nsx = null;
+            table_nhasanxuat.setRowCount(0);
+//        if (rs.isBeforeFirst() == false) {
+//            JOptionPane.showMessageDialog(this, "chua co sinh vien nao");
+//            return;
+//        }
+            while (rs.next()) {
+                nsx = new Vector();
+                nsx.add(rs.getString("manhasanxuat"));
+                nsx.add(rs.getString("tennhasanxuat"));
+                nsx.add(rs.getString("diachi"));
+                nsx.add(rs.getString("dienthoai"));
+                nsx.add(rs.getString("email"));
+                nsx.add(rs.getString("motathem"));
+                nsx.add(rs.getString("hinh"));
 
+                table_nhasanxuat.addRow(nsx);
+            }
+            tblNSX.setModel(table_nhasanxuat);
+            conn.close();
+            st.close();
+            rs.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+public void filldata(int row){
+    if(row<0){
+        return;
+    }
+    txt_manhasanxuat.setText(tblNSX.getValueAt(row,0).toString());
+    txt_tennhasanxuat.setText(tblNSX.getValueAt(row,1).toString());
+    txt_diachinhasanxuat.setText(tblNSX.getValueAt(row,2).toString());
+    txt_dienthoainhasanxuat.setText(tblNSX.getValueAt(row,3).toString());
+    txt_emailnhasanxuat.setText(tblNSX.getValueAt(row,4).toString());
+    txt_ghichunhasanxuat.setText(tblNSX.getValueAt(row,5).toString());
+    uphinh(tblNSX.getValueAt(row,6).toString()); 
+} 
+//public void loadtable_nhasanxuat(){
+//    Connection conn = null;
+//    Statement stmt = null;
+//    try {
+//        conn = DriverManager.getConnection(url);
+//        stmt = conn.createStatement();
+//        String sql = "select*from nhasanxuat";
+//        ResultSet rs = stmt.executeQuery(sql);
+//        list.clear();
+//        while (rs.next()) {
+//            String id = rs.getString("manhasanxuat");
+//            String name = rs.getString("tennhasanxuat");
+//            String diachi = rs.getString("diachi");
+//            String dienthoai = rs.getString("dienthoai");
+//            String email = rs.getString("email");
+//            String motathem = rs.getString("motathem");
+//            String hinh = rs.getString("hinh");
+//            B_Nhasanxuat ns = new B_Nhasanxuat(id, name, diachi, dienthoai, email, motathem, hinh);
+//            list.add(ns);
+//        }
+//        currentindex = 0;
+//        showdiem();
+//
+//    } catch (Exception e) {
+//        e.printStackTrace();
+//    }
+//}
+//public void showdiem(){
+//    B_Nhasanxuat nsx=list.get(currentindex); 
+//    txt_manhasanxuat.setText(nsx.manhasanxuat);
+//    txt_tennhasanxuat.setText(nsx.tennhasanxuat);
+//    txt_diachinhasanxuat.setText(nsx.diachi);
+//    txt_dienthoainhasanxuat.setText(nsx.dienthoai);
+//    txt_emailnhasanxuat.setText(nsx.email);
+//    txt_ghichunhasanxuat.setText(nsx.mottathem);
+//}
+public void reset(){
+    txt_manhasanxuat.setText("");
+    txt_tennhasanxuat.setText("");
+    txt_diachinhasanxuat.setText("");
+    txt_dienthoainhasanxuat.setText("");
+    txt_emailnhasanxuat.setText("");
+    txt_ghichunhasanxuat.setText("");
+}
+public void uphinh(String hinh){
+    ImageIcon image=new ImageIcon("src\\Img_Icon\\"+hinh); 
+    Image im=image.getImage();
+    ImageIcon icon=new ImageIcon(im.getScaledInstance(lbl_anhdaidiennhasanxuat.getWidth(),lbl_anhdaidiennhasanxuat.getHeight(),im.SCALE_SMOOTH)); 
+    lbl_anhdaidiennhasanxuat.setIcon(icon);  
+}
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTabbedPane Tabbed;
     private javax.swing.JButton btnAddDT;
@@ -1506,7 +1730,6 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
     private javax.swing.JLabel lblAccount;
     private javax.swing.JLabel lblAnhAccount;
     private javax.swing.JLabel lblAnhDaiDien;
-    private javax.swing.JLabel lblAnhDaiDien1;
     private javax.swing.JLabel lblId;
     private javax.swing.JLabel lblId2;
     private javax.swing.JLabel lblIndexDT;
@@ -1519,6 +1742,7 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
     private javax.swing.JLabel lblName4;
     private javax.swing.JLabel lblName5;
     private javax.swing.JLabel lblRecorđT;
+    private javax.swing.JLabel lbl_anhdaidiennhasanxuat;
     private javax.swing.JPanel panelThem;
     private javax.swing.JPanel pnltructhuoc;
     private javax.swing.JPanel pnltructhuoc2;
