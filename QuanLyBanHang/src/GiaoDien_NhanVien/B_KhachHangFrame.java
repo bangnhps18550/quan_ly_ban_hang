@@ -464,7 +464,8 @@ public class B_KhachHangFrame extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
         if (jTable1.getColumnModel().getColumnCount() > 0) {
-            jTable1.getColumnModel().getColumn(0).setResizable(false);
+            jTable1.getColumnModel().getColumn(0).setMinWidth(120);
+            jTable1.getColumnModel().getColumn(0).setMaxWidth(120);
             jTable1.getColumnModel().getColumn(2).setMinWidth(120);
             jTable1.getColumnModel().getColumn(2).setMaxWidth(120);
         }
@@ -585,8 +586,8 @@ public class B_KhachHangFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_btnNewMouseExited
 
     private void btnNewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNewActionPerformed
-        resetFill();
-        setWhile();// TODO add your handling code here:
+//        resetFill();
+//        setWhile();// TODO add your handling code here:
     }//GEN-LAST:event_btnNewActionPerformed
 
     private void btnAddMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddMouseEntered
