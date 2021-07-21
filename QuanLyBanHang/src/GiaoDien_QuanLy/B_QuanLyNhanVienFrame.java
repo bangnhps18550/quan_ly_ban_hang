@@ -1408,11 +1408,17 @@ public class B_QuanLyNhanVienFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_txtTimKiemKeyTyped
 
     private void txtTimKiemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTimKiemActionPerformed
-        // TODO add your handling code here:
+     // TODO add your handling code here:
     }//GEN-LAST:event_txtTimKiemActionPerformed
 
     private void txtTimKiemKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTimKiemKeyPressed
-        // TODO add your handling code here:
+       if(rdoAll.isSelected()){
+            rdoAllActionPerformed(null);
+        }else if(rdoTheoMa.isSelected()){
+            rdoTheoMaActionPerformed(null);
+        }else if(rdoTheoTen.isSelected()){
+            rdoTheoTenActionPerformed(null);
+        }
     }//GEN-LAST:event_txtTimKiemKeyPressed
 
     private void rdoAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdoAllActionPerformed

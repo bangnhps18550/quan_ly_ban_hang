@@ -1218,13 +1218,13 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDangxuatActionPerformed
 
     private void btnFullTableMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFullTableMouseEntered
-        btnFullTable.setBackground(new Color(0, 51, 255));
-        btnFullTable.setForeground(Color.white);
+//        btnFullTable.setBackground(new Color(0, 51, 255));
+//        btnFullTable.setForeground(Color.white);
     }//GEN-LAST:event_btnFullTableMouseEntered
 
     private void btnFullTableMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFullTableMouseExited
-        btnFullTable.setBackground(new Color(240, 240, 240));
-        btnFullTable.setForeground(new Color(0, 0, 255));// TODO add your handling code here:
+//        btnFullTable.setBackground(new Color(240, 240, 240));
+//        btnFullTable.setForeground(new Color(0, 0, 255));// TODO add your handling code here:
     }//GEN-LAST:event_btnFullTableMouseExited
 
     private void btnFullTableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFullTableActionPerformed
@@ -1244,8 +1244,8 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_txtTimKiemKeyTyped
 
     private void btnExitDTMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExitDTMouseEntered
-        btnExitDT.setBackground(new Color(255, 0, 153));
-        btnExitDT.setForeground(Color.white);
+//        btnExitDT.setBackground(new Color(255, 0, 153));
+//        btnExitDT.setForeground(Color.white);
     }//GEN-LAST:event_btnExitDTMouseEntered
 
     private void btnExitDTMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExitDTMouseExited
@@ -1259,77 +1259,77 @@ public class B_QuanLyKhoFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_btnUpdateDTMouseEntered
 
     private void btnUpdateDTMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUpdateDTMouseExited
-        btnUpdateDT.setBackground(new Color(240, 240, 240));
-        btnUpdateDT.setForeground(Color.black);
+//        btnUpdateDT.setBackground(new Color(240, 240, 240));
+//        btnUpdateDT.setForeground(Color.black);
     }//GEN-LAST:event_btnUpdateDTMouseExited
 
     private void btnNewDTMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNewDTMouseEntered
-        btnNewDT.setBackground(new Color(255, 0, 153));
-        btnNewDT.setForeground(Color.white);        // TODO add your handling code here:
+//        btnNewDT.setBackground(new Color(255, 0, 153));
+//        btnNewDT.setForeground(Color.white);        // TODO add your handling code here:
     }//GEN-LAST:event_btnNewDTMouseEntered
 
     private void btnNewDTMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNewDTMouseExited
-        btnNewDT.setBackground(new Color(240, 240, 240));
-        btnNewDT.setForeground(Color.black);      // TODO add your handling code here:
+//        btnNewDT.setBackground(new Color(240, 240, 240));
+//        btnNewDT.setForeground(Color.black);      // TODO add your handling code here:
     }//GEN-LAST:event_btnNewDTMouseExited
 
     private void btnDeleteDTMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteDTMouseEntered
-        btnDeleteDT.setBackground(new Color(255, 0, 153));
-        btnDeleteDT.setForeground(Color.white);    // TODO add your handling code here:
+//        btnDeleteDT.setBackground(new Color(255, 0, 153));
+//        btnDeleteDT.setForeground(Color.white);    // TODO add your handling code here:
     }//GEN-LAST:event_btnDeleteDTMouseEntered
 
     private void btnDeleteDTMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteDTMouseExited
-        btnDeleteDT.setBackground(new Color(240, 240, 240));
-        btnDeleteDT.setForeground(Color.black); // TODO add your handling code here:
+//        btnDeleteDT.setBackground(new Color(240, 240, 240));
+//        btnDeleteDT.setForeground(Color.black); // TODO add your handling code here:
     }//GEN-LAST:event_btnDeleteDTMouseExited
 
     private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
-        new GiaoDienChinhNhanVienFrame("Hello").setVisible(true);
-        this.dispose();
+//        new GiaoDienChinhNhanVienFrame("Hello").setVisible(true);
+//        this.dispose();
     }//GEN-LAST:event_btnReturnActionPerformed
 
     private void btnNSXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNSXActionPerformed
-        Tabbed.setSelectedIndex(1);
+//        Tabbed.setSelectedIndex(1);
     }//GEN-LAST:event_btnNSXActionPerformed
 
     private void btnNewNSXMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNewNSXMouseEntered
-         btnNewNSX.setBackground(new Color(255, 0, 153));
-         btnNewNSX.setForeground(Color.white);          // TODO add your handling code here:
+//         btnNewNSX.setBackground(new Color(255, 0, 153));
+//         btnNewNSX.setForeground(Color.white);          // TODO add your handling code here:
     }//GEN-LAST:event_btnNewNSXMouseEntered
 
     private void btnNewNSXMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNewNSXMouseExited
-        btnNewNSX.setBackground(new Color(240, 240, 240));
-        btnNewNSX.setForeground(Color.black); // TODO add your handling code here:
+//        btnNewNSX.setBackground(new Color(240, 240, 240));
+//        btnNewNSX.setForeground(Color.black); // TODO add your handling code here:
     }//GEN-LAST:event_btnNewNSXMouseExited
 
     private void btnAddNSXMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddNSXMouseEntered
-        btnAddNSX.setBackground(new Color(255, 0, 153));
-        btnAddNSX.setForeground(Color.white);          // TODO add your handling code here:
+//        btnAddNSX.setBackground(new Color(255, 0, 153));
+//        btnAddNSX.setForeground(Color.white);          // TODO add your handling code here:
     }//GEN-LAST:event_btnAddNSXMouseEntered
 
     private void btnAddNSXMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddNSXMouseExited
-        btnAddNSX.setBackground(new Color(240, 240, 240));
-        btnAddNSX.setForeground(Color.black); // TODO add your handling code here:
+//        btnAddNSX.setBackground(new Color(240, 240, 240));
+//        btnAddNSX.setForeground(Color.black); // TODO add your handling code here:
     }//GEN-LAST:event_btnAddNSXMouseExited
 
     private void btnDeleteNSXMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteNSXMouseEntered
-        btnDeleteNSX.setBackground(new Color(255, 0, 153));
-        btnDeleteNSX.setForeground(Color.white);          // TODO add your handling code here:
+//        btnDeleteNSX.setBackground(new Color(255, 0, 153));
+//        btnDeleteNSX.setForeground(Color.white);          // TODO add your handling code here:
     }//GEN-LAST:event_btnDeleteNSXMouseEntered
 
     private void btnDeleteNSXMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteNSXMouseExited
-        btnDeleteNSX.setBackground(new Color(240, 240, 240));
-        btnDeleteNSX.setForeground(Color.black); // TODO add your handling code here:
+//        btnDeleteNSX.setBackground(new Color(240, 240, 240));
+//        btnDeleteNSX.setForeground(Color.black); // TODO add your handling code here:
     }//GEN-LAST:event_btnDeleteNSXMouseExited
 
     private void btnExitNSXMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExitNSXMouseEntered
-        btnExitNSX.setBackground(new Color(255, 0, 153));
-        btnExitNSX.setForeground(Color.white);          // TODO add your handling code here:
+//        btnExitNSX.setBackground(new Color(255, 0, 153));
+//        btnExitNSX.setForeground(Color.white);          // TODO add your handling code here:
     }//GEN-LAST:event_btnExitNSXMouseEntered
 
     private void btnExitNSXMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExitNSXMouseExited
-        btnExitNSX.setBackground(new Color(240, 240, 240));
-        btnExitNSX.setForeground(Color.black); // TODO add your handling code here:
+//        btnExitNSX.setBackground(new Color(240, 240, 240));
+//        btnExitNSX.setForeground(Color.black); // TODO add your handling code here:
     }//GEN-LAST:event_btnExitNSXMouseExited
 
     private void btnXoaAnh1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnXoaAnh1ActionPerformed

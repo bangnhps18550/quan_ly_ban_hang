@@ -66,7 +66,7 @@ Thread dongho;
         setTitle("Quản Lý Bán Hàng");
         setResizable(false);
 
-        panelheader.setBackground(new java.awt.Color(63, 58, 228));
+        panelheader.setBackground(new java.awt.Color(26, 52, 158));
 
         lblAccount.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         lblAccount.setForeground(new java.awt.Color(255, 255, 255));
