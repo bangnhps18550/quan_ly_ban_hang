@@ -86,20 +86,20 @@ int currentindex=-1;
         pnltructhuoc2 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        cboBaoHanhDT = new javax.swing.JComboBox<>();
+        cboBaoHanhDT = new javax.swing.JComboBox<String>();
         txtSoLuongTonDT = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
-        cboHDH = new javax.swing.JComboBox<>();
+        cboHDH = new javax.swing.JComboBox<String>();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        cboSimDT = new javax.swing.JComboBox<>();
-        cboRamDT = new javax.swing.JComboBox<>();
+        cboSimDT = new javax.swing.JComboBox<String>();
+        cboRamDT = new javax.swing.JComboBox<String>();
         jPanel5 = new javax.swing.JPanel();
         jLabel18 = new javax.swing.JLabel();
-        cboMangDT = new javax.swing.JComboBox<>();
-        cboSacDT = new javax.swing.JComboBox<>();
+        cboMangDT = new javax.swing.JComboBox<String>();
+        cboSacDT = new javax.swing.JComboBox<String>();
         jLabel15 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -171,6 +171,8 @@ int currentindex=-1;
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Tabbed.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
@@ -310,7 +312,7 @@ int currentindex=-1;
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel9.setText("Bảo Hành");
 
-        cboBaoHanhDT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1 năm", "2 năm" }));
+        cboBaoHanhDT.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1 năm", "2 năm" }));
 
         javax.swing.GroupLayout pnltructhuoc2Layout = new javax.swing.GroupLayout(pnltructhuoc2);
         pnltructhuoc2.setLayout(pnltructhuoc2Layout);
@@ -350,7 +352,7 @@ int currentindex=-1;
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel10.setText("Hệ điều hành:");
 
-        cboHDH.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Android", "IOS" }));
+        cboHDH.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Android", "IOS" }));
         cboHDH.setMaximumSize(null);
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -359,10 +361,10 @@ int currentindex=-1;
         jLabel14.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel14.setText("Sim");
 
-        cboSimDT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1 Sim", "2 Sim" }));
+        cboSimDT.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1 Sim", "2 Sim" }));
         cboSimDT.setMaximumSize(null);
 
-        cboRamDT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2GB", "3GB", "4GB", " " }));
+        cboRamDT.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2GB", "3GB", "4GB", " " }));
         cboRamDT.setMaximumSize(null);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -405,10 +407,10 @@ int currentindex=-1;
         jLabel18.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel18.setText("Mạng di động:  ");
 
-        cboMangDT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "4G", "5G" }));
+        cboMangDT.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "4G", "5G" }));
         cboMangDT.setMaximumSize(null);
 
-        cboSacDT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hỗ trợ sạc nhanh", "Không hỗ trợ" }));
+        cboSacDT.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Hỗ trợ sạc nhanh", "Không hỗ trợ" }));
         cboSacDT.setMaximumSize(null);
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N

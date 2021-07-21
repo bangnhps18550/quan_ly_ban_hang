@@ -973,36 +973,36 @@ public class A_QuanLySanPhamFrame extends javax.swing.JFrame {
         new GiaoDienChinhNhanVienFrame("Hello").setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnReturnActionPerformed
-    public void dongHo() {
+    public void dongHo(){
         Thread clock;
-        clock = new Thread() {
-            public void run() {
-                try {
-                    while (true) {
-                        Calendar cal = new GregorianCalendar();
-                        int second = cal.get(Calendar.SECOND);
-                        int minute = cal.get(Calendar.MINUTE);
-                        int hour = cal.get(Calendar.HOUR_OF_DAY);
-                        String thu;
-                        int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
-                        if (dayOfWeek == 1) {
-                            thu = "Chủ nhật";
-                        } else {
-                            thu = "Thứ " + Integer.toString(dayOfWeek);
-                        }
-                        int dayOfMonth = cal.get(Calendar.DAY_OF_MONTH);
-                        int month = cal.get(Calendar.MONTH);
-                        int year = cal.get(Calendar.YEAR);
-                        lblDongHo.setText(hour + ":" + minute + ":" + second);
-                        lblNgay.setText(thu + " ngày " + dayOfMonth + " tháng " + (month + 1) + " năm " + year);
-                        sleep(1000);
-                    }
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        };
-        clock.start();
+           clock = new Thread() {
+               public void run() {
+                   try {
+                       while (true) {
+                           Calendar cal = new GregorianCalendar();
+                           int second = cal.get(Calendar.SECOND);
+                           int minute = cal.get(Calendar.MINUTE);
+                           int hour = cal.get(Calendar.HOUR_OF_DAY);
+                           String thu;
+                           int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
+                           if (dayOfWeek == 1) {
+                               thu = "Chủ nhật";
+                           } else {
+                               thu = "Thứ " + Integer.toString(dayOfWeek);
+                           }
+                           int dayOfMonth = cal.get(Calendar.DAY_OF_MONTH);
+                           int month = cal.get(Calendar.MONTH);
+                           int year = cal.get(Calendar.YEAR);
+                           lblDongHo.setText(hour + ":" + minute + ":" + second);
+                           lblNgay.setText(thu + " ngày " + dayOfMonth + " tháng " + (month + 1) + " năm " + year);
+                           sleep(1000);
+                       }
+                   } catch (Exception e) {
+                       e.printStackTrace();
+                   }
+               }
+           };
+    clock.start();
     }
     /**
      * @param args the command line arguments
