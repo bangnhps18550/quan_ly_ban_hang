@@ -2,11 +2,17 @@ package GiaoDien_DangNhap;
 
 /*test_tiep cai_demo*/
 
+
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
@@ -16,6 +22,7 @@ import javax.swing.JOptionPane;
  */
 public class DangNhapFrame extends javax.swing.JFrame {
 
+        static final String url="jdbc:sqlserver://localhost;databaseName=QUANLYBANHANG;user=sa;password=123";
     /**
      * Creates new form DangNhapFrame
      */
@@ -64,6 +71,7 @@ public class DangNhapFrame extends javax.swing.JFrame {
 
         jLabel10 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        lblLoi = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         txtUserName = new javax.swing.JTextField();
@@ -91,6 +99,12 @@ public class DangNhapFrame extends javax.swing.JFrame {
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Username");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 210, 150, 30));
+
+        lblLoi.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        lblLoi.setForeground(new java.awt.Color(238, 118, 118));
+        lblLoi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_Icon/warning.png"))); // NOI18N
+        lblLoi.setText("Các ô không được để trống");
+        getContentPane().add(lblLoi, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 410, 320, -1));
         getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 390, 320, 20));
         getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 290, 320, 20));
 
@@ -182,11 +196,24 @@ public class DangNhapFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_chkAgreeActionPerformed
 
     private void lblCancelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblCancelMouseClicked
-        System.exit(0);
+        int chose=JOptionPane.showConfirmDialog(this, "Bạn có muốn hoàn tất không ?");
+        if(chose==0){
+            System.exit(0);
+        }
     }//GEN-LAST:event_lblCancelMouseClicked
 
     private void btnLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLoginMouseClicked
-       
+       try{
+           Connection cn=DriverManager.getConnection(url);
+           Statement st=cn.createStatement();
+           String query="select manhanvien_username from nhanvien";
+           ResultSet rs= st.executeQuery(query);
+           while(rs.next()){
+               System.out.println(rs.getString("manhanvien_username"));
+           }
+       }catch(SQLException e){
+           e.printStackTrace();
+       }
     }//GEN-LAST:event_btnLoginMouseClicked
 
     private void lblChangePassWordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblChangePassWordMouseClicked
@@ -241,6 +268,7 @@ public class DangNhapFrame extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JLabel lblCancel;
     private javax.swing.JLabel lblChangePassWord;
+    private javax.swing.JLabel lblLoi;
     private javax.swing.JLabel leftPanel;
     private javax.swing.JLabel rightPanel;
     public javax.swing.JTextField txtUserName;
