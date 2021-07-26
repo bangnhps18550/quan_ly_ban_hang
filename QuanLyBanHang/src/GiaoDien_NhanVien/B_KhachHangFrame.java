@@ -743,8 +743,8 @@ public class B_KhachHangFrame extends javax.swing.JFrame {
         txtTen.setBackground(Color.white);
     }
     private void btnNewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNewActionPerformed
-        resetFill();
-        setWhile();// TODO add your handling code here:
+//        resetFill();
+//        setWhile();// TODO add your handling code here:
     }//GEN-LAST:event_btnNewActionPerformed
 
     private void btnNewMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNewMouseExited
